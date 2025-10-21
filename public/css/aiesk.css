@@ -1,0 +1,58 @@
+/* AI Share Kit – basic dropdown/inline styling and theme variables */
+.aiesk-scope {
+  font-family: system-ui, sans-serif;
+  --aiesk-primary: #2563eb;
+  --aiesk-accent: #9333ea;
+  --aiesk-btn-text: #ffffff;
+  --aiesk-bg: #ffffff;
+  --aiesk-fg: #0f172a;
+}
+
+/* bar container */
+.aiesk-share-bar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0.75rem 0;
+}
+
+/* inline buttons */
+.aiesk-btn {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: var(--aiesk-primary);
+  color: var(--aiesk-btn-text);
+  cursor: pointer;
+  transition: opacity 0.15s ease-in-out;
+}
+.aiesk-btn:hover { opacity: 0.9; }
+.aiesk-btn:active { transform: translateY(1px); }
+
+/* dropdown mode */
+.aiesk-dropdown .aiesk-trigger {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: var(--aiesk-primary);
+  color: var(--aiesk-btn-text);
+  cursor: pointer;
+}
+.aiesk-dropdown .aiesk-menu {
+  display: none;
+  position: relative;
+  margin-top: 0.25rem;
+}
+.aiesk-dropdown .aiesk-menu.open {
+  display: block;
+}
+.aiesk-dropdown .aiesk-menu .aiesk-btn {
+  display: inline-block;
+  margin: 0.25rem;
+  background: var(--aiesk-accent);
+}
+
+/* spacing under the Meow reply */
+.mwai-reply.mwai-ai.mwai-rendered + .aiesk-share-bar {
+  margin-top: 12px;
+}
