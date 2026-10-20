@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AI Share Kit
  * Description: Private report sharing, cloud saves, messaging links, local QR codes, and a teacher link-management dashboard.
- * Version: 2.4.0-rc.10
+ * Version: 2.4.0-rc.11
  * Author: Nick Syrigos CreativeOptions.eu
  * Text Domain: ai-share-kit
  * Requires at least: 6.0
@@ -17,7 +17,7 @@ if (!defined('ABSPATH')) { exit; }
 /** ----------------------------------------------------------------
  *  Constants
  * ---------------------------------------------------------------- */
-if (!defined('AIESK_VERSION')) { define('AIESK_VERSION', '2.4.0-rc.10'); }
+if (!defined('AIESK_VERSION')) { define('AIESK_VERSION', '2.4.0-rc.11'); }
 if (!defined('AIESK_FILE')) { define('AIESK_FILE', __FILE__); }
 if (!defined('AIESK_PATH')) { define('AIESK_PATH', plugin_dir_path(__FILE__)); }
 if (!defined('AIESK_URL')) { define('AIESK_URL', plugin_dir_url(__FILE__)); }
