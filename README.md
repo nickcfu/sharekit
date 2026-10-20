@@ -4,7 +4,7 @@ AI Share Kit adds private report links, local QR codes, cloud saves and messagin
 controls to AI Engine and Easy Forms. Teachers choose the report, check its title
 and preview, then decide where to share it.
 
-**Current build: 2.4.0-rc.10.** This release candidate adds the saved-report menu adapter used by Easy Forms alpha.42 batch result rows. It retains the RC5 fixes; live provider consent/uploads and the installed site's final acceptance checks are still required. Nothing in this package deploys a website
+**Current build: 2.4.0-rc.11.** This release candidate adds dashboard-token styling for embedded Share Kit manager, connections and sharing surfaces while retaining the saved-report menu adapter used by Easy Forms batch result rows. Live provider consent/uploads and the installed site's final acceptance checks are still required. Nothing in this package deploys a website
 or sends messages automatically. Earlier changes are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Install or upgrade
