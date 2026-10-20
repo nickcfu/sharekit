@@ -4,6 +4,13 @@ This file records historical changes. [README.md](README.md) describes the
 current build; earlier storage mechanisms and limits below are not current
 installation instructions.
 
+## 2.4.0-rc.11
+
+- Consume the EdWiBo dashboard design tokens for embedded sharing, manager and
+  connected-account surfaces in both light and dark themes.
+- Keep the standalone Share Kit fallback palette for pages rendered outside the
+  dashboard.
+
 ## 2.4.0-rc.6
 
 - Add a public saved-report menu adapter for authenticated report lists.
