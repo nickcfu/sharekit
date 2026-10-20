@@ -1,7 +1,6 @@
 <?php
 /**
- * REST API Routes — .eml download & TTL link creation
- * Safe for WP 6.8.x, PHP 8.x. Logged-in users only.
+ * REST API routes for private downloads, EML files, TTL links, and revocation.
  */
 
 if (!defined('ABSPATH')) { exit; }
@@ -13,132 +12,99 @@ final class AIESK_REST {
     }
 
     public function register_routes(): void {
+        register_rest_route('aiesk/v1', '/download/(?P<token>[A-Za-z0-9_-]{20,128})', [
+            'methods' => 'GET',
+            'callback' => [$this, 'download_private_file'],
+            'permission_callback' => '__return_true',
+        ]);
 
-        // Create downloadable .eml representing the message email
         register_rest_route('aiesk/v1', '/eml', [
-            'methods'             => 'POST',
-            'callback'            => [$this, 'create_eml'],
-            'permission_callback' => function () { return is_user_logged_in(); },
-            'args'                => [
-                'title' => ['type' => 'string', 'required' => false],
-                'html'  => ['type' => 'string', 'required' => true],
-            ],
+            'methods' => 'POST',
+            'callback' => [$this, 'create_eml'],
+            'permission_callback' => function () { return aiesk_rest_permission(); },
         ]);
 
-        // Create TTL-based share link for guests (public viewer)
         register_rest_route('aiesk/v1', '/link', [
-            'methods'             => 'POST',
-            'callback'            => [$this, 'create_link'],
-            'permission_callback' => function () { return is_user_logged_in(); },
-            'args'                => [
-                'title'  => ['type' => 'string', 'required' => false],
-                'html'   => ['type' => 'string', 'required' => true],
-                'amount' => ['type' => 'integer', 'required' => false],
-                'unit'   => ['type' => 'string', 'required' => false],
-            ],
+            'methods' => 'POST',
+            'callback' => [$this, 'create_link'],
+            'permission_callback' => function () { return aiesk_rest_permission('link'); },
+        ]);
+
+        register_rest_route('aiesk/v1', '/link/(?P<id>\d+)', [
+            'methods' => 'DELETE',
+            'callback' => [$this, 'revoke_link'],
+            'permission_callback' => 'aiesk_manage_links_permission',
         ]);
     }
 
-    /**
-     * Utility to safely parse the JSON body from a REST request.
-     */
     private function get_json_body(\WP_REST_Request $req): array {
-        $data = json_decode($req->get_body(), true);
-        return is_array($data) ? $data : [];
+        return aiesk_request_data($req);
     }
 
-    /**
-     * POST /aiesk/v1/eml
-     * Build a simple .eml file (subject + HTML body) and return the public URL.
-     * Expected JSON: { "title": "…", "html": "<div>…</div>" }
-     */
     public function create_eml(\WP_REST_Request $req) {
-        $data  = $this->get_json_body($req);
-        $title = sanitize_text_field($data['title'] ?? 'Shared message');
-        $html  = wp_kses_post($data['html'] ?? '');
-
-        if ($html === '') {
-            return new \WP_Error('aiesk_no_html', __('No HTML provided', 'ai-share-kit'), ['status' => 400]);
-        }
-
-        // Build minimal .eml
-        $eml  = "Subject: {$title}\r\n";
-        $eml .= "MIME-Version: 1.0\r\n";
-        $eml .= "Content-Type: text/html; charset=UTF-8\r\n\r\n";
-        $eml .= $html;
-
-        // Save to uploads
-        $upload = wp_upload_dir();
-        if (!empty($upload['error'])) {
-            return new \WP_Error('aiesk_upload_error', $upload['error'], ['status' => 500]);
-        }
-
-        $fname = 'aiesk-' . time() . '.eml';
-        $fpath = trailingslashit($upload['basedir']) . $fname;
-        $ok    = file_put_contents($fpath, $eml);
-
-        if ($ok === false) {
-            return new \WP_Error('aiesk_eml_write_failed', __('Failed to write EML file', 'ai-share-kit'), ['status' => 500]);
-        }
-
-        $url = trailingslashit($upload['baseurl']) . $fname;
-
-        return rest_ensure_response([
-            'url'      => esc_url_raw($url),
-            'filename' => $fname,
-        ]);
+        return new WP_Error('aiesk_email_draft_retired', __('Email drafts are no longer available. Choose another sharing option.', 'ai-share-kit'), ['status' => 410]);
     }
 
-    /**
-     * POST /aiesk/v1/link
-     * Create TTL link (stored in CPT) and return a /shared/{token} URL.
-     * Expected JSON: { "title": "…", "html": "<div>…</div>", "amount": 7, "unit": "days|weeks|months" }
-     */
     public function create_link(\WP_REST_Request $req) {
-        $data   = $this->get_json_body($req);
-        $title  = sanitize_text_field($data['title'] ?? 'Shared message');
-        $html   = wp_kses_post($data['html'] ?? '');
+        $data = $this->get_json_body($req);
+        $result = AIESK_Share_Link::create_record(
+            $data['title'] ?? '',
+            $data['html'] ?? '',
+            array_merge(
+                ['amount' => $data['amount'] ?? null, 'unit' => $data['unit'] ?? null, 'report_lang' => $data['report_lang'] ?? ''],
+                array_key_exists('short_url', $data) ? ['short_url' => $data['short_url']] : []
+            )
+        );
 
-        if ($html === '') {
-            return new \WP_Error('aiesk_no_html', __('No HTML provided', 'ai-share-kit'), ['status' => 400]);
+        return is_wp_error($result) ? $result : aiesk_private_rest_response($result);
+    }
+
+    public function revoke_link(\WP_REST_Request $req) {
+        $permission = aiesk_manage_links_permission();
+        if (is_wp_error($permission)) {
+            return $permission;
+        }
+        $post_id = absint($req['id']);
+        $post = get_post($post_id);
+        if (!$post || $post->post_type !== 'aiesk_link' || $post->post_status !== 'publish' || !aiesk_can_manage_link($post)) {
+            // Use the same response for another teacher's record and a missing ID.
+            return new \WP_Error('aiesk_link_not_found', __('Share link not found.', 'ai-share-kit'), ['status' => 404]);
         }
 
-        // TTL defaults from settings
-        $amount = isset($data['amount']) ? absint($data['amount']) : (int) get_option('aiesk_ttl_default_amount', 7);
-        $unit   = isset($data['unit'])   ? sanitize_text_field($data['unit']) : (string) get_option('aiesk_ttl_default_unit', 'days');
-        if (!in_array($unit, ['days','weeks','months'], true)) {
-            $unit = 'days';
+        $revoked_at = (int) get_post_meta($post_id, 'aiesk_revoked_at', true);
+        if (!$revoked_at) {
+            $revoked_at = time();
+            update_post_meta($post_id, 'aiesk_revoked_at', $revoked_at);
+            $revoked_at = (int) get_post_meta($post_id, 'aiesk_revoked_at', true);
+            if (!$revoked_at) {
+                return new \WP_Error('aiesk_revoke_failed', __('Access could not be revoked. Please try again.', 'ai-share-kit'), ['status' => 500]);
+            }
         }
+        $retention = class_exists('AIESK_Privacy') ? AIESK_Privacy::revoked($post_id, $revoked_at) : true;
+        $result = ['success' => true, 'post_id' => $post_id, 'revoked_at' => $revoked_at, 'status' => 'revoked'];
+        if (is_wp_error($retention)) { $result['warning'] = $retention->get_error_message(); }
+        return aiesk_private_rest_response($result);
+    }
 
-        $expires = strtotime("+{$amount} {$unit}");
-        $token   = wp_generate_password(20, false, false);
-
-        $post_id = wp_insert_post([
-            'post_type'   => 'aiesk_link',
-            'post_status' => 'publish',
-            'post_title'  => $title,
-        ]);
-
-        if (is_wp_error($post_id) || !$post_id) {
-            return new \WP_Error('aiesk_link_create_failed', __('Could not create share record', 'ai-share-kit'), ['status' => 500]);
+    public function download_private_file(\WP_REST_Request $req) {
+        nocache_headers();
+        header('Cache-Control: private, no-store, max-age=0', true);
+        header('Pragma: no-cache', true);
+        // WordPress also routes HEAD to GET handlers. Metadata probes must not
+        // redeem a one-use download before the user requests its contents.
+        if ($req->get_method() !== 'GET') {
+            header('Allow: GET', true);
+            return new WP_Error('aiesk_download_method_not_allowed', __('Method not allowed.', 'ai-share-kit'), ['status' => 405]);
         }
-
-        update_post_meta($post_id, 'aiesk_token', $token);
-        update_post_meta($post_id, 'aiesk_expires_at', $expires);
-        update_post_meta($post_id, 'aiesk_payload_html', $html);
-        update_post_meta($post_id, 'aiesk_creator', get_current_user_id());
-
-        $url = home_url('/shared/' . $token);
-
-        /**
-         * Action: allow further processing (logging, webhooks, etc.)
-         */
-        do_action('aiesk_link_created', $post_id, $url, $expires);
-
-        return rest_ensure_response([
-            'url'        => esc_url_raw($url),
-            'expires_at' => (int) $expires,
-            'post_id'    => (int) $post_id,
-        ]);
+        $file = aiesk_consume_private_download((string) $req['token']);
+        if (is_wp_error($file)) {
+            return $file;
+        }
+        header('X-Content-Type-Options: nosniff', true);
+        header('Content-Type: ' . $file['mime']);
+        header('Content-Disposition: attachment; filename="' . $file['filename'] . '"');
+        header('Content-Length: ' . (string) strlen($file['bytes']));
+        echo $file['bytes'];
+        exit;
     }
 }

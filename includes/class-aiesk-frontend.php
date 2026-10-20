@@ -55,15 +55,15 @@ final class AIESK_Frontend
         register_rest_route(self::REST_NAMESPACE, '/render-bar', [
             'methods'  => 'GET',
             'callback' => [$this, 'rest_render_bar'],
-            'permission_callback' => function(){ return is_user_logged_in(); },
+            'permission_callback' => function(){ return aiesk_rest_permission(); },
         ]);
 
         // Exports
         register_rest_route(self::REST_NAMESPACE, '/export-pdf', [
-            'methods' => 'POST', 'callback' => [$this, 'rest_export_pdf'], 'permission_callback' => '__return_true',
+            'methods' => 'POST', 'callback' => [$this, 'rest_export_pdf'], 'permission_callback' => function(){ return aiesk_rest_permission('pdf'); },
         ]);
         register_rest_route(self::REST_NAMESPACE, '/export-docx', [
-            'methods' => 'POST', 'callback' => [$this, 'rest_export_docx'], 'permission_callback' => '__return_true',
+            'methods' => 'POST', 'callback' => [$this, 'rest_export_docx'], 'permission_callback' => function(){ return aiesk_rest_permission('docx'); },
         ]);
 
         // Providers (require login if setting demands it)
@@ -138,11 +138,8 @@ final class AIESK_Frontend
 
     private function respond_file_download($bytes, string $filename, string $mime) {
         if (empty($bytes)) return new \WP_Error('aiesk_export_error', __('Failed to generate file', 'ai-share-kit'), ['status' => 500]);
-        $upload_dir = wp_upload_dir();
-        $file_path  = trailingslashit($upload_dir['basedir']) . $filename;
-        file_put_contents($file_path, $bytes);
-        $url = trailingslashit($upload_dir['baseurl']) . $filename;
-        return rest_ensure_response(['url' => esc_url_raw($url), 'filename' => $filename, 'mime' => $mime]);
+        $file = aiesk_store_private_download((string) $bytes, $filename, $mime);
+        return is_wp_error($file) ? $file : rest_ensure_response($file);
     }
 
     private function assert_nonce_header(\WP_REST_Request $req) {

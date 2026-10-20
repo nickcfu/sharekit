@@ -31,11 +31,14 @@ final class AIESK_Admin_Menu {
             wp_die(__('You are not allowed to view this page.', 'ai-share-kit'));
         }
 
-        $active = $_GET['tab'] ?? 'sharing';
+        $active = isset($_GET['tab']) && is_string($_GET['tab']) ? sanitize_key(wp_unslash($_GET['tab'])) : 'sharing';
         $tabs = [
             'sharing' => __('Sharing', 'ai-share-kit'),
             'styles'  => __('Styles', 'ai-share-kit'),
             'ttl'     => __('TTL Links & QR', 'ai-share-kit'),
+            'privacy' => __('Privacy & retention', 'ai-share-kit'),
+            'cloud' => __('Cloud storage', 'ai-share-kit'),
+            'health' => __('Share Health', 'ai-share-kit'),
         ];
 
         echo '<div class="wrap aiesk-admin">';
@@ -49,9 +52,23 @@ final class AIESK_Admin_Menu {
             echo '<a href="' . esc_url($url) . '" class="' . esc_attr($class) . '">' . esc_html($label) . '</a>';
         }
         echo '</nav>';
+        if ($active === 'health') {
+            AIESK_Admin_Health::render();
+            echo '</div>';
+            return;
+        }
+        if ($active === 'cloud') {
+            AIESK_Admin_Cloud::render();
+            echo '</div>';
+            return;
+        }
 
         echo '<form method="post" action="options.php" style="margin-top:1em">';
         switch ($active) {
+            case 'privacy':
+                settings_fields('aiesk_privacy');
+                do_settings_sections('aiesk_privacy');
+                break;
             case 'styles':
                 settings_fields('aiesk_styles');
                 do_settings_sections('aiesk_styles');
@@ -67,6 +84,7 @@ final class AIESK_Admin_Menu {
         }
         submit_button();
         echo '</form>';
+        if ($active === 'privacy') { do_action('aiesk_privacy_after_settings'); }
         echo '</div>';
     }
 }

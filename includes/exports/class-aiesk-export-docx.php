@@ -1,7 +1,7 @@
 <?php
 /**
  * Export — DOCX
- * Placeholder to integrate your working DOCX generation script.
+ * DOCX generation supplied by a registered conversion filter.
  */
 
 if (!defined('ABSPATH')) { exit; }
@@ -19,7 +19,7 @@ final class AIESK_Export_DOCX {
         register_rest_route('aiesk/v1', '/docx', [
             'methods'             => 'POST',
             'callback'            => [$this, 'generate'],
-            'permission_callback' => function () { return is_user_logged_in(); },
+            'permission_callback' => function () { return aiesk_rest_permission('docx'); },
         ]);
     }
 
@@ -28,31 +28,32 @@ final class AIESK_Export_DOCX {
      * Expected JSON: { "html": "<p>...</p>", "title": "..." }
      */
     public function generate(WP_REST_Request $req) {
-        $data = json_decode($req->get_body(), true);
+        $data = aiesk_request_data($req);
         if (!is_array($data) || empty($data['html'])) {
             return new WP_Error('aiesk_no_html', __('No HTML provided', 'ai-share-kit'), ['status' => 400]);
         }
 
-        $html  = wp_kses_post($data['html']);
-        $title = sanitize_text_field($data['title'] ?? 'export-' . date('Ymd-His'));
+        $html  = aiesk_validate_share_html($data['html']);
+        if (is_wp_error($html)) return $html;
+        $title = aiesk_normalize_title($data['title'] ?? '');
 
-        // ✅ Placeholder: Hook for your custom DOCX generator script
-        // Replace this with your working DOCX generation logic
-        $bytes = apply_filters('aiesk_generate_docx', $html, $title);
-
-        if (empty($bytes)) {
+        if (!has_filter('aiesk_generate_docx')) {
             return new WP_Error('aiesk_docx_error', __('DOCX generator not connected yet', 'ai-share-kit'), ['status' => 501]);
         }
 
-        // Save the generated DOCX file
-        $upload_dir = wp_upload_dir();
-        $file_path  = trailingslashit($upload_dir['basedir']) . sanitize_file_name($title) . '.docx';
-        file_put_contents($file_path, $bytes);
-        $url = trailingslashit($upload_dir['baseurl']) . basename($file_path);
+        $reservation = AIESK_Download_Budget::begin();
+        if (is_wp_error($reservation)) { return $reservation; }
+        try {
+            $bytes = apply_filters('aiesk_generate_docx', $html, $title, $data);
+            if (is_wp_error($bytes)) { return $bytes; }
+            if (!is_string($bytes) || strncmp($bytes, "PK\x03\x04", 4) !== 0) {
+                return new WP_Error('aiesk_docx_error', __('DOCX generator did not return a DOCX file', 'ai-share-kit'), ['status' => 500]);
+            }
+            $file = AIESK_Download_Budget::store($reservation, $bytes, sanitize_file_name($title) . '.docx', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
+            return is_wp_error($file) ? $file : rest_ensure_response($file);
+        } catch (Throwable $error) {
+            return new WP_Error('aiesk_docx_error', __('The file could not be generated. Please try again.', 'ai-share-kit'), ['status' => 500]);
+        } finally { AIESK_Download_Budget::release($reservation); }
 
-        return rest_ensure_response([
-            'url' => esc_url_raw($url),
-            'filename' => basename($file_path),
-        ]);
     }
 }

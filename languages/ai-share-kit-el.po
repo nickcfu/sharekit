@@ -1,0 +1,2213 @@
+# Greek translations for AI Share Kit.
+msgid ""
+msgstr "Project-Id-Version: AI Share Kit 2.4.0-rc.5\nLanguage: el\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: includes/class-aiesk-privacy.php:398
+msgid "%1$d checked; %2$d links verified revoked; %3$d QR records cleared; %4$d need review. Run at %5$s UTC."
+msgstr "Ελέγχθηκαν %1$d αναφορές· επιβεβαιώθηκε η ανάκληση %2$d συνδέσμων· καθαρίστηκαν %3$d εγγραφές QR· %4$d χρειάζονται έλεγχο. Εκτέλεση: %5$s UTC."
+
+#: includes/sharing/class-aiesk-share-email.php:122
+msgid "%1$s from %2$s has sent you this report via AI EdWiBo."
+msgstr "Αυτή η αναφορά σάς στάλθηκε μέσω AI EdWiBo από %1$s (σχολείο: %2$s)."
+
+#: includes/sharing/class-aiesk-share-email.php:70
+msgid "%1$s sent you a report via AI EdWiBo: %2$s"
+msgstr "Αναφορά από %1$s μέσω AI EdWiBo: %2$s"
+
+#: includes/sharing/class-aiesk-share-email.php:125
+msgid "%s has sent you this report via AI EdWiBo."
+msgstr "Αυτή η αναφορά σάς στάλθηκε μέσω AI EdWiBo από %s."
+
+#: includes/class-aiesk-i18n.php:13
+msgid "0 links"
+msgstr "0 σύνδεσμοι"
+
+#: includes/providers/class-aiesk-cloud-auth.php:431
+msgid "A cloud connection is busy. Retry erasure in a few minutes."
+msgstr "Μια σύνδεση cloud χρησιμοποιείται αυτή τη στιγμή. Δοκιμάστε ξανά τη διαγραφή σε λίγα λεπτά."
+
+#: includes/class-aiesk-i18n.php:14
+msgid "A compact address with the same expiry and access controls."
+msgstr "Συντομότερη διεύθυνση, με την ίδια λήξη και τους ίδιους κανόνες πρόσβασης."
+
+#: includes/class-aiesk-i18n.php:15
+msgid "A file is still being saved to {provider}. Wait for its result before saving again."
+msgstr "Ένα αρχείο αποθηκεύεται ακόμη στην υπηρεσία {provider}. Περιμένετε το αποτέλεσμα πριν αποθηκεύσετε ξανά."
+
+#: includes/class-aiesk-i18n.php:16
+msgid "A separate file will be saved to your cloud account. It remains there until you delete it in the provider. Link expiry and revocation do not remove cloud files."
+msgstr "Θα αποθηκευτεί ξεχωριστό αρχείο στον λογαριασμό cloud σας. Θα παραμείνει εκεί μέχρι να το διαγράψετε από την αντίστοιχη υπηρεσία. Η λήξη ή η ανάκληση συνδέσμων δεν διαγράφουν αρχεία από το cloud."
+
+#: includes/class-aiesk-admin-menu.php:19 includes/class-aiesk-admin-menu.php:20 includes/class-aiesk-admin-menu.php:45
+msgid "AI Share Kit"
+msgstr "AI Share Kit"
+
+#: includes/providers/class-aiesk-cloud-auth.php:425
+msgid "AI Share Kit cloud connections"
+msgstr "Συνδέσεις cloud του AI Share Kit"
+
+#: includes/class-aiesk-privacy.php:282 includes/class-aiesk-privacy.php:287
+msgid "AI Share Kit reports"
+msgstr "Αναφορές AI Share Kit"
+
+#: includes/admin/class-aiesk-admin-styles.php:79
+msgid "Accent Color"
+msgstr "Χρώμα έμφασης"
+
+#: includes/class-aiesk-privacy.php:102
+msgid "Access could not be revoked. Permanent deletion was not performed. Please try again or contact an administrator."
+msgstr "Δεν ήταν δυνατή η ανάκληση της πρόσβασης. Η οριστική διαγραφή δεν πραγματοποιήθηκε. Δοκιμάστε ξανά ή επικοινωνήστε με έναν διαχειριστή."
+
+#: includes/routes/class-aiesk-rest.php:80
+msgid "Access could not be revoked. Please try again."
+msgstr "Δεν ήταν δυνατή η διακοπή της πρόσβασης. Δοκιμάστε ξανά."
+
+#: includes/class-aiesk-privacy.php:46
+msgid "Access is revoked, but the automatic deletion date could not be saved. You can delete this report manually."
+msgstr "Η πρόσβαση διακόπηκε, αλλά δεν αποθηκεύτηκε η ημερομηνία αυτόματης διαγραφής. Μπορείτε να διαγράψετε αυτή την αναφορά χειροκίνητα."
+
+#: includes/class-aiesk-i18n.php:17
+msgid "Account connected. No report has been uploaded."
+msgstr "Ο λογαριασμός συνδέθηκε. Δεν έχει μεταφορτωθεί καμία αναφορά."
+
+#: includes/class-aiesk-limits.php:25
+msgid "Account limits"
+msgstr "Όρια λογαριασμού"
+
+#: includes/class-aiesk-i18n.php:18 includes/frontend/class-aiesk-dashboard.php:173
+msgid "Active"
+msgstr "Σε ισχύ"
+
+#: includes/class-aiesk-i18n.php:19
+msgid "Administrator setup required"
+msgstr "Απαιτείται ρύθμιση από διαχειριστή"
+
+#: includes/frontend/class-aiesk-dashboard.php:173
+msgid "All"
+msgstr "Όλοι"
+
+#: includes/class-aiesk-i18n.php:20 includes/frontend/class-aiesk-dashboard.php:72 includes/frontend/class-aiesk-dashboard.php:72 includes/frontend/class-aiesk-dashboard.php:137
+msgid "All shared links"
+msgstr "Όλοι οι σύνδεσμοι"
+
+#: includes/frontend/class-aiesk-dashboard.php:167
+msgid "All teachers"
+msgstr "Όλοι οι εκπαιδευτικοί"
+
+#: includes/class-aiesk-i18n.php:21
+msgid "Allow pop-up windows for this site, then connect again."
+msgstr "Επιτρέψτε τα αναδυόμενα παράθυρα για αυτόν τον ιστότοπο και έπειτα συνδεθείτε ξανά."
+
+#: includes/admin/class-aiesk-admin-ttl.php:78
+msgid "Amount"
+msgstr "Πλήθος"
+
+#: includes/sharing/class-aiesk-share-email.php:67
+msgid "An AI EdWiBo user"
+msgstr "Χρήστης του AI EdWiBo"
+
+#: includes/providers/class-aiesk-cloud-auth.php:445
+msgid "Another cloud connection request is running. Try again shortly."
+msgstr "Μια άλλη σύνδεση με υπηρεσία cloud βρίσκεται σε εξέλιξη. Δοκιμάστε ξανά σε λίγο."
+
+#: includes/class-aiesk-download-budget.php:246
+msgid "Another download is being prepared. Please try again in a moment."
+msgstr "Προετοιμάζεται ήδη άλλη λήψη. Δοκιμάστε ξανά σε λίγο."
+
+#: includes/class-aiesk-limits.php:54
+msgid "Another sharing request is still running. Wait a moment and try again."
+msgstr "Μια άλλη κοινοποίηση βρίσκεται σε εξέλιξη. Περιμένετε λίγο και δοκιμάστε ξανά."
+
+#: includes/frontend/class-aiesk-dashboard.php:184
+msgid "Anyone with an active link can view its shared report. Revoking it also stops access through its QR code."
+msgstr "Όποιος έχει έναν ενεργό σύνδεσμο μπορεί να δει την κοινοποιημένη αναφορά. Η ανάκλησή του διακόπτει την πρόσβαση και μέσω του κωδικού QR."
+
+#: includes/class-aiesk-i18n.php:22
+msgid "Anyone with this link can read the selected response until it expires or you revoke it."
+msgstr "Όποιος έχει αυτόν τον σύνδεσμο μπορεί να διαβάσει την επιλεγμένη απάντηση μέχρι να λήξει ή να τον ανακαλέσετε."
+
+#: includes/class-aiesk-i18n.php:23
+msgid "Anyone with this link or its QR code will lose access. You can create a new link from the report if you need to share it again."
+msgstr "Όποιος έχει αυτόν τον σύνδεσμο ή τον κωδικό QR του δεν θα έχει πλέον πρόσβαση. Αν θέλετε να κοινοποιήσετε ξανά την αναφορά, μπορείτε να δημιουργήσετε νέο σύνδεσμο."
+
+#: includes/admin/class-aiesk-admin-styles.php:41
+msgid "Appearance"
+msgstr "Εμφάνιση"
+
+#: includes/class-aiesk-i18n.php:24
+msgid "Ask your site administrator for permission to connect cloud storage."
+msgstr "Ζητήστε από τον διαχειριστή του ιστοτόπου άδεια σύνδεσης με υπηρεσίες αποθήκευσης στο cloud."
+
+#: includes/class-aiesk-i18n.php:25
+msgid "Ask your site administrator to enable this service."
+msgstr "Ζητήστε από τον διαχειριστή του ιστοτόπου να ενεργοποιήσει αυτή την υπηρεσία."
+
+#: includes/admin/class-aiesk-admin-ttl.php:235
+msgid "Ask your teacher for a new link."
+msgstr "Ζητήστε νέο σύνδεσμο από τον εκπαιδευτικό σας."
+
+msgid "Automatic cleanup runs in small hourly batches when WordPress scheduled tasks run. It does not remove the original AI Engine conversation, recipient downloads, or backup copies."
+msgstr "Η αυτόματη εκκαθάριση εκτελείται σε μικρές ωριαίες παρτίδες, όταν εκτελούνται οι προγραμματισμένες εργασίες του WordPress. Δεν διαγράφει την αρχική συνομιλία του AI Engine, αρχεία που έχουν κατεβάσει οι παραλήπτες ή αντίγραφα ασφαλείας."
+
+#: includes/class-aiesk-privacy.php:373
+msgid "Automatic cleanup starts hourly and continues in small scheduled batches while a backlog remains. It depends on WordPress scheduled tasks running. It does not remove the original AI Engine conversation, recipient downloads, or backup copies."
+msgstr "Η αυτόματη εκκαθάριση ξεκινά κάθε ώρα και συνεχίζεται σε μικρές προγραμματισμένες παρτίδες όσο υπάρχουν εκκρεμότητες. Προϋποθέτει την εκτέλεση των προγραμματισμένων εργασιών του WordPress. Δεν αφαιρεί την αρχική συνομιλία του AI Engine, τα αρχεία που έχουν κατεβάσει οι παραλήπτες ή τα αντίγραφα ασφαλείας."
+
+#: includes/class-aiesk-privacy.php:310
+msgid "Automatic deletion after (UTC)"
+msgstr "Αυτόματη διαγραφή μετά τις (UTC)"
+
+#: includes/admin/class-aiesk-admin-health.php:23 includes/admin/class-aiesk-admin-health.php:24 includes/admin/class-aiesk-admin-health.php:25
+msgid "Available when the index is ready"
+msgstr "Διαθέσιμο όταν ολοκληρωθεί το ευρετήριο"
+
+#: includes/admin/class-aiesk-admin-health.php:20
+msgid "Building or recovering; source queries remain available"
+msgstr "Δημιουργία ή αποκατάσταση σε εξέλιξη· τα αρχικά δεδομένα παραμένουν διαθέσιμα"
+
+#: includes/admin/class-aiesk-admin-styles.php:80
+msgid "Button Text Color"
+msgstr "Χρώμα κειμένου κουμπιών"
+
+#: includes/class-aiesk-i18n.php:26
+msgid "By {name}"
+msgstr "Από {name}"
+
+#: includes/admin/class-aiesk-admin-cloud.php:42
+msgid "Callback URL (copy exactly)"
+msgstr "Διεύθυνση επιστροφής (αντιγράψτε την ακριβώς)"
+
+#: includes/admin/class-aiesk-admin-health.php:29
+msgid "Charged storage / site limit"
+msgstr "Δεσμευμένος χώρος / όριο ιστοτόπου"
+
+#: includes/class-aiesk-i18n.php:27
+msgid "Check connection"
+msgstr "Έλεγχος σύνδεσης"
+
+msgid "Check connections"
+msgstr "Έλεγχος συνδέσεων"
+
+#: includes/class-aiesk-i18n.php:28
+msgid "Check your connection and try again."
+msgstr "Ελέγξτε τη σύνδεσή σας στο διαδίκτυο και δοκιμάστε ξανά."
+
+#: includes/class-aiesk-i18n.php:29 includes/frontend/class-aiesk-connections.php:43
+msgid "Checking connection…"
+msgstr "Έλεγχος σύνδεσης…"
+
+#: includes/class-aiesk-i18n.php:30
+msgid "Checking your connections…"
+msgstr "Γίνεται έλεγχος των συνδέσεών σας…"
+
+#: includes/class-aiesk-i18n.php:31
+msgid "Checking…"
+msgstr "Γίνεται έλεγχος…"
+
+#: includes/providers/class-aiesk-cloud-files.php:69
+msgid "Choose HTML, PDF or Word format."
+msgstr "Επιλέξτε μορφή HTML, PDF ή Word."
+
+#: includes/class-aiesk-i18n.php:32
+msgid "Choose a recipient in {provider} and send the message there. Nothing is sent automatically. If the app does not open, copy the link or use the QR code."
+msgstr "Επιλέξτε παραλήπτη στην εφαρμογή {provider} και στείλτε το μήνυμα από εκεί. Τίποτα δεν αποστέλλεται αυτόματα. Αν η εφαρμογή δεν ανοίγει, αντιγράψτε τον σύνδεσμο ή χρησιμοποιήστε τον κωδικό QR."
+
+#: includes/providers/class-aiesk-cloud-files.php:51
+msgid "Choose a supported cloud provider."
+msgstr "Επιλέξτε μια υποστηριζόμενη υπηρεσία cloud."
+
+#: includes/class-aiesk-link-manager.php:52
+msgid "Choose a valid link filter."
+msgstr "Επιλέξτε έγκυρο φίλτρο συνδέσμων."
+
+#: includes/class-aiesk-helpers.php:112
+msgid "Choose a valid positive TTL."
+msgstr "Επιλέξτε έγκυρη διάρκεια ισχύος μεγαλύτερη από το μηδέν."
+
+#: includes/class-aiesk-report-context.php:10
+msgid "Choose a valid report language."
+msgstr "Επιλέξτε έγκυρη γλώσσα αναφοράς."
+
+#: includes/class-aiesk-i18n.php:33
+msgid "Choose a whole duration between 1 and {hours} hours."
+msgstr "Επιλέξτε ακέραιο αριθμό ωρών, από 1 έως {hours}."
+
+#: includes/class-aiesk-i18n.php:34
+msgid "Choose an app and select the recipient there. Nothing is sent automatically."
+msgstr "Επιλέξτε εφαρμογή και στη συνέχεια τον παραλήπτη. Τίποτα δεν αποστέλλεται αυτόματα."
+
+#: includes/class-aiesk-i18n.php:35
+msgid "Choose the response you want to share."
+msgstr "Επιλέξτε την απάντηση που θέλετε να κοινοποιήσετε."
+
+#: includes/sharing/class-aiesk-share-link.php:45
+msgid "Choose whether to use a short URL."
+msgstr "Επιλέξτε αν θέλετε σύντομο σύνδεσμο."
+
+#: includes/class-aiesk-i18n.php:36
+msgid "Clear filters"
+msgstr "Καθαρισμός φίλτρων"
+
+#: includes/admin/class-aiesk-admin-cloud.php:43
+msgid "Client ID / App key"
+msgstr "Αναγνωριστικό εφαρμογής (Client ID / App key)"
+
+#: includes/admin/class-aiesk-admin-cloud.php:44
+msgid "Client secret / App secret"
+msgstr "Μυστικό κλειδί εφαρμογής (Client secret / App secret)"
+
+#: includes/class-aiesk-i18n.php:37
+msgid "Close dialog"
+msgstr "Κλείσιμο παραθύρου"
+
+#: includes/class-aiesk-i18n.php:38
+msgid "Close sharing dialog"
+msgstr "Κλείσιμο παραθύρου κοινοποίησης"
+
+#: includes/providers/class-aiesk-cloud-auth.php:299
+msgid "Cloud account connected. Close this window and return to the page where you started."
+msgstr "Ο λογαριασμός cloud συνδέθηκε. Κλείστε αυτό το παράθυρο και επιστρέψτε στη σελίδα από την οποία ξεκινήσατε."
+
+msgid "Cloud account connected. Close this window and return to your report."
+msgstr "Ο λογαριασμός cloud συνδέθηκε. Κλείστε αυτό το παράθυρο και επιστρέψτε στην αναφορά σας."
+
+#: includes/admin/class-aiesk-admin-cloud.php:17
+msgid "Cloud application settings saved. Each teacher connects their own account from Share or Connected accounts in their dashboard."
+msgstr "Οι ρυθμίσεις της εφαρμογής cloud αποθηκεύτηκαν. Κάθε εκπαιδευτικός συνδέει τον δικό του λογαριασμό από την Κοινοποίηση ή τους Συνδεδεμένους λογαριασμούς στον πίνακα ελέγχου του."
+
+msgid "Cloud application settings saved. Each teacher connects their own account from Share."
+msgstr "Οι ρυθμίσεις της εφαρμογής cloud αποθηκεύτηκαν. Κάθε εκπαιδευτικός συνδέει τον δικό του λογαριασμό από την Κοινοποίηση."
+
+#: includes/admin/class-aiesk-admin-health.php:50
+msgid "Cloud application setup"
+msgstr "Ρύθμιση εφαρμογών cloud"
+
+#: includes/class-aiesk-i18n.php:39 includes/providers/class-aiesk-cloud-auth.php:300 includes/providers/class-aiesk-cloud-auth.php:300
+msgid "Cloud connection"
+msgstr "Σύνδεση cloud"
+
+#: includes/providers/class-aiesk-cloud-auth.php:443
+msgid "Cloud connection was cancelled."
+msgstr "Η σύνδεση με την υπηρεσία cloud ακυρώθηκε."
+
+#: includes/providers/class-aiesk-cloud-files.php:126
+msgid "Cloud files must be no larger than 10 MiB. Choose HTML or a smaller report."
+msgstr "Τα αρχεία cloud δεν πρέπει να ξεπερνούν τα 10 MiB. Επιλέξτε HTML ή μια μικρότερη αναφορά."
+
+#: includes/class-aiesk-admin-menu.php:40 includes/admin/class-aiesk-admin-cloud.php:21
+msgid "Cloud storage"
+msgstr "Αποθήκευση στο cloud"
+
+#: includes/class-aiesk-i18n.php:40
+msgid "Cloud upload status"
+msgstr "Κατάσταση μεταφόρτωσης στο cloud"
+
+#: includes/class-aiesk-i18n.php:41
+msgid "Complete sign-in in the account window. This page updates automatically."
+msgstr "Ολοκληρώστε τη σύνδεση στο παράθυρο του λογαριασμού. Αυτή η σελίδα ενημερώνεται αυτόματα."
+
+#: includes/admin/class-aiesk-admin-health.php:48
+msgid "Configured; live account check required"
+msgstr "Έχει ρυθμιστεί· απαιτείται έλεγχος με πραγματικό λογαριασμό"
+
+#: includes/class-aiesk-privacy.php:82
+msgid "Confirm permanent deletion of this shared report."
+msgstr "Επιβεβαιώστε την οριστική διαγραφή αυτής της κοινοποιημένης αναφοράς."
+
+#: includes/class-aiesk-privacy.php:420
+msgid "Confirm that these shared links should be revoked before running cleanup."
+msgstr "Πριν εκτελέσετε την εκκαθάριση, επιβεβαιώστε ότι θέλετε να ανακληθούν αυτοί οι σύνδεσμοι."
+
+#: includes/class-aiesk-i18n.php:42
+msgid "Connect %s"
+msgstr "Σύνδεση με %s"
+
+#: includes/class-aiesk-i18n.php:43
+msgid "Connect account"
+msgstr "Σύνδεση λογαριασμού"
+
+#: includes/providers/class-aiesk-cloud-auth.php:444
+msgid "Connect this cloud account again before saving."
+msgstr "Συνδέστε ξανά αυτόν τον λογαριασμό cloud πριν αποθηκεύσετε το αρχείο."
+
+#: includes/class-aiesk-i18n.php:44
+msgid "Connect your {provider} account to save this response."
+msgstr "Συνδέστε τον λογαριασμό σας στην υπηρεσία {provider} για να αποθηκεύσετε αυτή την απάντηση."
+
+#: includes/class-aiesk-i18n.php:45
+msgid "Connect {provider}"
+msgstr "Σύνδεση με {provider}"
+
+#: includes/class-aiesk-i18n.php:46
+msgid "Connected"
+msgstr "Συνδεδεμένος"
+
+#: includes/frontend/class-aiesk-connections.php:33
+msgid "Connected accounts"
+msgstr "Συνδεδεμένοι λογαριασμοί"
+
+#: includes/class-aiesk-i18n.php:47
+msgid "Connected to {provider}"
+msgstr "Έγινε σύνδεση με {provider}"
+
+#: includes/class-aiesk-i18n.php:48
+msgid "Connected to {provider}. Choose Save when you are ready."
+msgstr "Έγινε σύνδεση με {provider}. Επιλέξτε Αποθήκευση όταν είστε έτοιμοι."
+
+#: includes/frontend/class-aiesk-connections.php:49
+msgid "Connecting an account does not upload a report. Choose Save from a report when you are ready. Disconnecting removes this site’s stored connection; files already saved in your cloud account remain there."
+msgstr "Η σύνδεση ενός λογαριασμού δεν μεταφορτώνει αναφορά. Επιλέξτε Αποθήκευση από την αναφορά όταν είστε έτοιμοι. Η αποσύνδεση καταργεί την αποθηκευμένη σύνδεση αυτού του ιστοτόπου· τα ήδη αποθηκευμένα αρχεία παραμένουν στον λογαριασμό cloud σας."
+
+#: includes/class-aiesk-i18n.php:49
+msgid "Connection checked."
+msgstr "Ο έλεγχος της σύνδεσης ολοκληρώθηκε."
+
+#: includes/class-aiesk-i18n.php:50
+msgid "Connection could not be checked. Try Check connection again."
+msgstr "Δεν ήταν δυνατός ο έλεγχος της σύνδεσης. Επιλέξτε ξανά Έλεγχος σύνδεσης."
+
+#: includes/class-aiesk-i18n.php:51
+msgid "Connection status unavailable"
+msgstr "Η κατάσταση σύνδεσης δεν είναι διαθέσιμη"
+
+#: includes/providers/class-aiesk-cloud-auth.php:299
+msgid "Connection was not completed. Return to the page where you started and connect again. Make sure you are still signed in."
+msgstr "Η σύνδεση δεν ολοκληρώθηκε. Επιστρέψτε στη σελίδα από την οποία ξεκινήσατε και συνδεθείτε ξανά. Βεβαιωθείτε ότι παραμένετε συνδεδεμένοι στον ιστότοπο."
+
+msgid "Connection was not completed. Return to your report and connect again. Make sure you are still signed in."
+msgstr "Η σύνδεση δεν ολοκληρώθηκε. Επιστρέψτε στην αναφορά και συνδέστε ξανά τον λογαριασμό. Βεβαιωθείτε ότι παραμένετε συνδεδεμένοι στον ιστότοπο."
+
+#: includes/class-aiesk-i18n.php:52
+msgid "Connection was not completed. You can connect again when ready."
+msgstr "Η σύνδεση δεν ολοκληρώθηκε. Μπορείτε να δοκιμάσετε ξανά όταν είστε έτοιμοι."
+
+#: includes/class-aiesk-i18n.php:53
+msgid "Connection was not completed. You can connect again."
+msgstr "Η σύνδεση δεν ολοκληρώθηκε. Μπορείτε να συνδεθείτε ξανά."
+
+#: includes/class-aiesk-i18n.php:54
+msgid "Connections checked. Use the action shown for each service."
+msgstr "Ο έλεγχος ολοκληρώθηκε. Χρησιμοποιήστε την ενέργεια που εμφανίζεται για κάθε υπηρεσία."
+
+#: includes/class-aiesk-i18n.php:55
+msgid "Copy"
+msgstr "Αντιγραφή"
+
+#: includes/class-aiesk-i18n.php:56
+msgid "Copy link"
+msgstr "Αντιγραφή συνδέσμου"
+
+#: includes/class-aiesk-i18n.php:57
+msgid "Copy share link"
+msgstr "Αντιγραφή συνδέσμου κοινοποίησης"
+
+#: includes/class-aiesk-i18n.php:58
+msgid "Could not connect. Check your connection and try again."
+msgstr "Δεν ήταν δυνατή η σύνδεση. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο και δοκιμάστε ξανά."
+
+#: includes/sharing/class-aiesk-share-link.php:72
+msgid "Could not create a secure link. Please try again."
+msgstr "Δεν ήταν δυνατή η δημιουργία ασφαλούς συνδέσμου. Δοκιμάστε ξανά."
+
+#: includes/sharing/class-aiesk-share-link.php:84
+msgid "Could not create the private link."
+msgstr "Δεν ήταν δυνατή η δημιουργία του ιδιωτικού συνδέσμου."
+
+#: includes/class-aiesk-i18n.php:59
+msgid "Could not load your shared links. Please try again."
+msgstr "Δεν ήταν δυνατή η φόρτωση των συνδέσμων σας. Δοκιμάστε ξανά."
+
+#: includes/providers/class-aiesk-cloud-files.php:135
+msgid "Could not prepare a unique filename. Please try again."
+msgstr "Δεν ήταν δυνατή η δημιουργία μοναδικού ονόματος αρχείου. Δοκιμάστε ξανά."
+
+msgid "Could not securely save the download. Please try again."
+msgstr "Δεν ήταν δυνατή η ασφαλής αποθήκευση του αρχείου λήψης. Δοκιμάστε ξανά."
+
+#: includes/sharing/class-aiesk-share-link.php:231
+msgid "Could not securely save the private link. Please try again."
+msgstr "Δεν ήταν δυνατή η ασφαλής αποθήκευση του ιδιωτικού συνδέσμου. Δοκιμάστε ξανά."
+
+#: includes/class-aiesk-i18n.php:60
+msgid "Couldn’t load your links"
+msgstr "Δεν φορτώθηκαν οι σύνδεσμοί σας"
+
+#: includes/class-aiesk-i18n.php:61
+msgid "Create QR code"
+msgstr "Δημιουργία κωδικού QR"
+
+#: includes/admin/class-aiesk-admin-cloud.php:28
+msgid "Create a Scoped access application with App folder access. Enable files.content.write, add the exact callback below, and use its App key and App secret. Files are saved in the application folder under Apps."
+msgstr "Δημιουργήστε εφαρμογή τύπου Scoped access με πρόσβαση App folder. Ενεργοποιήστε το files.content.write, προσθέστε ακριβώς την παρακάτω διεύθυνση επιστροφής και χρησιμοποιήστε τα App key και App secret της εφαρμογής. Τα αρχεία αποθηκεύονται στον φάκελο της εφαρμογής μέσα στο Apps."
+
+#: includes/class-aiesk-i18n.php:62
+msgid "Create a private link from an AI response, then return here to manage access."
+msgstr "Δημιουργήστε έναν ιδιωτικό σύνδεσμο από μια απάντηση AI και επιστρέψτε εδώ για να διαχειριστείτε την πρόσβαση."
+
+#: includes/class-aiesk-i18n.php:63
+msgid "Create an email draft"
+msgstr "Δημιουργία προσχεδίου email"
+
+#: includes/frontend/class-aiesk-frontend-render.php:81
+msgid "Create link"
+msgstr "Δημιουργία συνδέσμου"
+
+#: includes/class-aiesk-i18n.php:64
+msgid "Create link for Viber"
+msgstr "Δημιουργία συνδέσμου για Viber"
+
+#: includes/class-aiesk-i18n.php:65
+msgid "Create link for WhatsApp"
+msgstr "Δημιουργία συνδέσμου για WhatsApp"
+
+#: includes/class-aiesk-i18n.php:66
+msgid "Create private link"
+msgstr "Δημιουργία ιδιωτικού συνδέσμου"
+
+#: includes/class-aiesk-privacy.php:307
+msgid "Created (UTC)"
+msgstr "Δημιουργία (UTC)"
+
+#: includes/class-aiesk-i18n.php:67
+msgid "Created {date}"
+msgstr "Δημιουργία: {date}"
+
+#: includes/class-aiesk-i18n.php:68
+msgid "Creating your private link…"
+msgstr "Δημιουργία ιδιωτικού συνδέσμου…"
+
+#: includes/class-aiesk-i18n.php:69
+msgid "Custom"
+msgstr "Άλλη διάρκεια"
+
+#: includes/admin/class-aiesk-admin-styles.php:42
+msgid "Customize colors, theme and layout. All colors are applied to a custom CSS class to avoid overriding your theme defaults."
+msgstr "Προσαρμόστε τα χρώματα, το θέμα και τη διάταξη. Τα χρώματα εφαρμόζονται σε ξεχωριστή κλάση CSS, ώστε να μην αλλάζουν οι προεπιλογές του θέματος του ιστοτόπου σας."
+
+#: includes/class-aiesk-frontend.php:117
+msgid "DOCX"
+msgstr "DOCX"
+
+#: includes/exports/class-aiesk-export-docx.php:50 includes/integrations/class-aiesk-easy-forms.php:140
+msgid "DOCX generator did not return a DOCX file"
+msgstr "Η λειτουργία δημιουργίας DOCX δεν επέστρεψε αρχείο DOCX"
+
+#: includes/exports/class-aiesk-export-docx.php:41
+msgid "DOCX generator not connected yet"
+msgstr "Η λειτουργία δημιουργίας DOCX δεν έχει συνδεθεί ακόμη"
+
+#: includes/class-aiesk-i18n.php:70
+msgid "Days"
+msgstr "Ημέρες"
+
+#: includes/admin/class-aiesk-admin-ttl.php:72
+msgid "Default TTL for generated links or QR codes."
+msgstr "Προεπιλεγμένη διάρκεια ισχύος για τους συνδέσμους και τους κωδικούς QR που δημιουργούνται."
+
+#: includes/class-aiesk-privacy.php:379
+msgid "Default: 30 days. Enter 0 for manual deletion only, or 1–365 for automatic cleanup. Only new shares use this setting."
+msgstr "Προεπιλογή: 30 ημέρες. Ορίστε 0 για αποκλειστικά χειροκίνητη διαγραφή ή 1–365 για αυτόματη εκκαθάριση. Η ρύθμιση ισχύει μόνο για νέες κοινοποιήσεις."
+
+#: includes/admin/class-aiesk-admin-ttl.php:71
+msgid "Defaults"
+msgstr "Προεπιλογές"
+
+#: includes/class-aiesk-privacy.php:366
+msgid "Delete inactive reports after"
+msgstr "Διαγραφή ανενεργών αναφορών μετά από"
+
+#: includes/class-aiesk-i18n.php:71
+msgid "Delete permanently"
+msgstr "Οριστική διαγραφή"
+
+#: includes/class-aiesk-i18n.php:72
+msgid "Delete saved report"
+msgstr "Διαγραφή αντιγράφου"
+
+#: includes/class-aiesk-link-manager.php:190 includes/class-aiesk-link-manager.php:238
+msgid "Deleted account"
+msgstr "Διαγραμμένος λογαριασμός"
+
+#: includes/class-aiesk-uninstall.php:13
+msgid "Deleting AI Share Kit always removes its cloud credentials, pending connections, temporary downloads, settings and scheduled tasks. Deactivating it keeps those settings. Files already saved to cloud accounts are not removed."
+msgstr "Η διαγραφή του AI Share Kit αφαιρεί πάντα τα διαπιστευτήρια cloud, τις εκκρεμείς συνδέσεις, τα προσωρινά αρχεία λήψης, τις ρυθμίσεις και τις προγραμματισμένες εργασίες του. Η απενεργοποίηση διατηρεί αυτές τις ρυθμίσεις. Τα αρχεία που έχουν ήδη αποθηκευτεί σε λογαριασμούς cloud δεν αφαιρούνται."
+
+#: includes/class-aiesk-privacy.php:467
+msgid "Deleting a shared copy does not delete its original AI Engine conversation, recipient downloads, or copies in site backups. Current sharing controls generate QR codes in the browser. Older integrations using the server QR endpoint may send the share URL to an external QR service and store a QR image in uploads."
+msgstr "Η διαγραφή ενός κοινοποιημένου αντιγράφου δεν διαγράφει την αρχική συνομιλία του AI Engine, αρχεία που έχουν κατεβάσει οι παραλήπτες ή αντίγραφα στα αντίγραφα ασφαλείας του ιστοτόπου. Τα τρέχοντα εργαλεία κοινοποίησης δημιουργούν κωδικούς QR στο πρόγραμμα περιήγησης. Παλαιότερες διασυνδέσεις που χρησιμοποιούν το σημείο πρόσβασης QR του διακομιστή ενδέχεται να στέλνουν τον σύνδεσμο κοινοποίησης σε εξωτερική υπηρεσία QR και να αποθηκεύουν εικόνα QR στον φάκελο μεταφορτώσεων."
+
+#: includes/class-aiesk-i18n.php:73
+msgid "Deleting saved report…"
+msgstr "Διαγραφή αντιγράφου…"
+
+#: includes/admin/class-aiesk-admin-health.php:48 includes/admin/class-aiesk-admin-cloud.php:36
+msgid "Disabled"
+msgstr "Ανενεργό"
+
+#: includes/class-aiesk-i18n.php:74
+msgid "Disabled by administrator"
+msgstr "Απενεργοποιήθηκε από τον διαχειριστή"
+
+#: includes/class-aiesk-i18n.php:75
+msgid "Disconnect"
+msgstr "Αποσύνδεση"
+
+#: includes/class-aiesk-i18n.php:76
+msgid "Disconnected. Files already saved in your cloud account are unchanged."
+msgstr "Η σύνδεση καταργήθηκε. Τα ήδη αποθηκευμένα αρχεία στον λογαριασμό cloud σας δεν άλλαξαν."
+
+#: includes/class-aiesk-i18n.php:77
+msgid "Disconnected. Files already saved remain in your cloud account."
+msgstr "Η σύνδεση καταργήθηκε. Τα ήδη αποθηκευμένα αρχεία παραμένουν στον λογαριασμό cloud σας."
+
+#: includes/class-aiesk-i18n.php:78
+msgid "Disconnecting account…"
+msgstr "Αποσύνδεση λογαριασμού…"
+
+#: includes/class-aiesk-i18n.php:79
+msgid "Disconnecting stops future uploads. Files already saved stay in your cloud account."
+msgstr "Η αποσύνδεση σταματά τις μελλοντικές μεταφορτώσεις. Τα ήδη αποθηκευμένα αρχεία παραμένουν στον λογαριασμό cloud σας."
+
+#: includes/class-aiesk-i18n.php:80
+msgid "Disconnecting…"
+msgstr "Αποσύνδεση…"
+
+#: includes/class-aiesk-i18n.php:81
+msgid "Dismiss notification"
+msgstr "Κλείσιμο ειδοποίησης"
+
+#: includes/class-aiesk-i18n.php:82
+msgid "Download PDF"
+msgstr "Λήψη PDF"
+
+#: includes/class-aiesk-i18n.php:83
+msgid "Download QR image"
+msgstr "Λήψη εικόνας QR"
+
+#: includes/frontend/class-aiesk-frontend-render.php:86
+msgid "Download Word (.docx)"
+msgstr "Λήψη Word (.docx)"
+
+#: includes/class-aiesk-i18n.php:84
+msgid "Download Word document"
+msgstr "Λήψη εγγράφου Word"
+
+#: includes/class-aiesk-i18n.php:85
+msgid "Download a draft to open in your email app. Add recipients there before sending."
+msgstr "Κατεβάστε ένα προσχέδιο και ανοίξτε το στην εφαρμογή email σας. Προσθέστε εκεί τους παραλήπτες πριν το στείλετε."
+
+#: includes/class-aiesk-i18n.php:86
+msgid "Download email draft"
+msgstr "Λήψη προσχεδίου email"
+
+#: includes/class-aiesk-download-budget.php:91 includes/class-aiesk-download-budget.php:133
+msgid "Downloads must contain data and be no larger than 10 MB."
+msgstr "Τα αρχεία λήψης πρέπει να περιέχουν δεδομένα και να μην ξεπερνούν τα 10 MB."
+
+msgid "Drive OAuth"
+msgstr "Google Drive OAuth"
+
+msgid "Drive OAuth URL not configured yet"
+msgstr "Δεν έχει οριστεί ακόμη η διεύθυνση OAuth του Google Drive"
+
+#: includes/class-aiesk-frontend.php:119 includes/frontend/class-aiesk-frontend-render.php:89
+msgid "Dropbox"
+msgstr "Dropbox"
+
+msgid "Dropbox OAuth"
+msgstr "Dropbox OAuth"
+
+msgid "Dropbox OAuth URL not configured yet"
+msgstr "Δεν έχει οριστεί ακόμη η διεύθυνση OAuth του Dropbox"
+
+msgid "Dropbox OAuth callback received. Please finalize token storage in provider code."
+msgstr "Ελήφθη η απόκριση OAuth του Dropbox. Ολοκληρώστε την αποθήκευση του διακριτικού στον κώδικα διασύνδεσης του παρόχου."
+
+msgid "Dropbox OAuth failed: no code provided."
+msgstr "Η σύνδεση OAuth του Dropbox απέτυχε: δεν δόθηκε κωδικός."
+
+msgid "Dropbox authorization required"
+msgstr "Απαιτείται εξουσιοδότηση Dropbox"
+
+msgid "Dropbox upload not connected yet"
+msgstr "Η μεταφόρτωση στο Dropbox δεν έχει συνδεθεί ακόμη"
+
+#: includes/class-aiesk-i18n.php:87
+msgid "Duration"
+msgstr "Διάρκεια"
+
+#: includes/class-aiesk-i18n.php:88
+msgid "Duration unit"
+msgstr "Μονάδα διάρκειας"
+
+#: includes/class-aiesk-privacy.php:409
+msgid "Each click processes up to 50 reports. It revokes their links before removing verified local QR images. Report snapshots remain in the dashboard and keep their recorded retention policy. Images at an unverified location are left for an administrator to review."
+msgstr "Κάθε πάτημα επεξεργάζεται έως 50 αναφορές. Πρώτα ανακαλεί τους συνδέσμους τους και μετά αφαιρεί τις επαληθευμένες τοπικές εικόνες QR. Τα αντίγραφα των αναφορών παραμένουν στον πίνακα ελέγχου με την πολιτική διατήρησης που έχει καταγραφεί για το καθένα. Εικόνες σε μη επαληθευμένη τοποθεσία παραμένουν για έλεγχο από διαχειριστή."
+
+#: includes/frontend/class-aiesk-frontend-render.php:85
+msgid "Email"
+msgstr "Email"
+
+#: includes/admin/class-aiesk-admin-sharing.php:21
+msgid "Email (send message)"
+msgstr "Email (αποστολή μηνύματος)"
+
+msgid "Email as .eml (download)"
+msgstr "Email ως .eml (λήψη αρχείου)"
+
+msgid "Email draft"
+msgstr "Προσχέδιο email"
+
+#: includes/routes/class-aiesk-rest.php:45
+msgid "Email drafts are no longer available. Choose another sharing option."
+msgstr "Τα πρόχειρα email δεν είναι πλέον διαθέσιμα. Επιλέξτε άλλη επιλογή κοινοποίησης."
+
+#: includes/sharing/class-aiesk-share-email.php:82
+msgid "Email failed to send"
+msgstr "Η αποστολή του email απέτυχε"
+
+#: includes/class-aiesk-i18n.php:89
+msgid "Email sent"
+msgstr "Το email στάλθηκε"
+
+#: includes/class-aiesk-i18n.php:90
+msgid "Email this response"
+msgstr "Αποστολή απάντησης με email"
+
+#: includes/class-aiesk-i18n.php:91
+msgid "Enable %s"
+msgstr "Ενεργοποίηση %s"
+
+#: includes/frontend/class-aiesk-dashboard.php:185
+msgid "Enable JavaScript to load and manage your shared links."
+msgstr "Ενεργοποιήστε τη JavaScript για να φορτώσετε και να διαχειριστείτε τους συνδέσμους σας."
+
+#: includes/frontend/class-aiesk-connections.php:50
+msgid "Enable JavaScript to manage connected accounts."
+msgstr "Ενεργοποιήστε τη JavaScript για να διαχειριστείτε τους συνδεδεμένους λογαριασμούς."
+
+#: includes/admin/class-aiesk-admin-cloud.php:26
+msgid "Enable the Google Drive API. Create a Web application OAuth client, configure its consent screen, and add the exact callback below. Access is limited to files created or selected through this application (drive.file)."
+msgstr "Ενεργοποιήστε το Google Drive API. Δημιουργήστε πρόγραμμα-πελάτη OAuth τύπου Web application, ρυθμίστε την οθόνη συναίνεσης και προσθέστε ακριβώς την παρακάτω διεύθυνση επιστροφής. Η πρόσβαση περιορίζεται σε αρχεία που δημιουργούνται ή επιλέγονται μέσω αυτής της εφαρμογής (drive.file)."
+
+#: includes/admin/class-aiesk-admin-cloud.php:46
+msgid "Enable this cloud destination"
+msgstr "Ενεργοποίηση αυτής της υπηρεσίας cloud"
+
+#: includes/admin/class-aiesk-admin-sharing.php:56 includes/admin/class-aiesk-admin-cloud.php:36
+msgid "Enabled"
+msgstr "Ενεργό"
+
+#: includes/admin/class-aiesk-admin-sharing.php:44
+msgid "Enabled Features"
+msgstr "Ενεργές λειτουργίες"
+
+#: includes/sharing/class-aiesk-share-email.php:35
+msgid "Enter a recipient email address and report title."
+msgstr "Πληκτρολογήστε τη διεύθυνση email του παραλήπτη και τον τίτλο της αναφοράς."
+
+#: includes/sharing/class-aiesk-share-email.php:40
+msgid "Enter one valid recipient email address."
+msgstr "Πληκτρολογήστε μία έγκυρη διεύθυνση email παραλήπτη."
+
+#: includes/admin/class-aiesk-admin-cloud.php:44
+msgid "Enter the application secret"
+msgstr "Εισαγάγετε το μυστικό κλειδί της εφαρμογής"
+
+#: includes/admin/class-aiesk-admin-health.php:41
+msgid "Examined / deleted / failed"
+msgstr "Ελέγχθηκαν / διαγράφηκαν / απέτυχαν"
+
+#: includes/class-aiesk-i18n.php:92
+msgid "Existing active link ready"
+msgstr "Ο υπάρχων ενεργός σύνδεσμος είναι έτοιμος"
+
+#: includes/class-aiesk-i18n.php:93 includes/frontend/class-aiesk-dashboard.php:173
+msgid "Expired"
+msgstr "Έληξε"
+
+#: includes/admin/class-aiesk-admin-health.php:33
+msgid "Expired records awaiting cleanup"
+msgstr "Ληγμένες εγγραφές σε αναμονή εκκαθάρισης"
+
+#: includes/class-aiesk-i18n.php:94
+msgid "Expired {date}"
+msgstr "Έληξε: {date}"
+
+#: includes/class-aiesk-privacy.php:308
+msgid "Expires (UTC)"
+msgstr "Λήξη (UTC)"
+
+#: includes/class-aiesk-i18n.php:95
+msgid "Expires after {hours} hours"
+msgstr "Λήγει σε {hours} ώρες"
+
+#: includes/class-aiesk-i18n.php:96
+msgid "Expires {date}"
+msgstr "Λήξη: {date}"
+
+#: includes/class-aiesk-i18n.php:97
+msgid "Expires {date}. Revoking the link also disables this QR code."
+msgstr "Λήξη: {date}. Η ανάκληση του συνδέσμου απενεργοποιεί και αυτόν τον κωδικό QR."
+
+#: includes/class-aiesk-i18n.php:98
+msgid "Export a PDF"
+msgstr "Εξαγωγή σε PDF"
+
+#: includes/class-aiesk-i18n.php:99
+msgid "Export a Word document"
+msgstr "Εξαγωγή σε Word"
+
+#: includes/class-aiesk-frontend.php:140
+msgid "Failed to generate file"
+msgstr "Η δημιουργία του αρχείου απέτυχε"
+
+#: includes/class-aiesk-i18n.php:100
+msgid "File format"
+msgstr "Μορφή αρχείου"
+
+#: includes/frontend/class-aiesk-connections.php:39 includes/frontend/class-aiesk-connections.php:39
+msgid "Files saved to Apps / application folder"
+msgstr "Αποθήκευση αρχείων στον φάκελο της εφαρμογής, μέσα στο Apps"
+
+#: includes/frontend/class-aiesk-connections.php:39
+msgid "Files saved to your Drive"
+msgstr "Αποθήκευση αρχείων στο Drive σας"
+
+#: includes/frontend/class-aiesk-dashboard.php:172
+msgid "Filter by link status"
+msgstr "Φιλτράρισμα κατά κατάσταση συνδέσμου"
+
+#: includes/frontend/class-aiesk-dashboard.php:150
+msgid "Find a shared report, copy its link, or stop access when you need to."
+msgstr "Βρείτε μια κοινοποιημένη αναφορά, αντιγράψτε τον σύνδεσμό της ή διακόψτε την πρόσβαση όποτε χρειάζεται."
+
+#: includes/class-aiesk-i18n.php:101
+msgid "Finish connecting in the account window, then choose Check connections."
+msgstr "Ολοκληρώστε τη σύνδεση στο παράθυρο του λογαριασμού και έπειτα επιλέξτε Έλεγχος συνδέσεων."
+
+#: includes/class-aiesk-i18n.php:102
+msgid "Finish connecting in the new window, then use Check connection if this screen does not update."
+msgstr "Ολοκληρώστε τη σύνδεση στο νέο παράθυρο. Αν αυτή η οθόνη δεν ενημερωθεί, επιλέξτε Έλεγχος σύνδεσης."
+
+#: includes/admin/class-aiesk-admin-cloud.php:50
+msgid "For a public launch, complete each provider’s production-access or consent-review requirements. Credentials and account authorisations cannot be validated until the application is configured and a real account completes connection."
+msgstr "Πριν από τη δημόσια διάθεση, ολοκληρώστε τις απαιτήσεις κάθε παρόχου για πρόσβαση παραγωγής ή έλεγχο συναίνεσης. Τα στοιχεία εφαρμογής και οι εξουσιοδοτήσεις λογαριασμών μπορούν να ελεγχθούν μόνο αφού ρυθμιστεί η εφαρμογή και ολοκληρωθεί η σύνδεση με πραγματικό λογαριασμό."
+
+#: includes/class-aiesk-frontend.php:118 includes/frontend/class-aiesk-frontend-render.php:88
+msgid "Google Drive"
+msgstr "Google Drive"
+
+msgid "Google Drive OAuth callback received. Please finalize token storage in provider code."
+msgstr "Ελήφθη η απόκριση OAuth του Google Drive. Ολοκληρώστε την αποθήκευση του διακριτικού στον κώδικα διασύνδεσης του παρόχου."
+
+msgid "Google Drive authorization required"
+msgstr "Απαιτείται εξουσιοδότηση Google Drive"
+
+msgid "Google Drive upload not connected yet"
+msgstr "Η μεταφόρτωση στο Google Drive δεν έχει συνδεθεί ακόμη"
+
+#: includes/class-aiesk-i18n.php:103
+msgid "Hours"
+msgstr "Ώρες"
+
+#: includes/class-aiesk-privacy.php:410
+msgid "I understand that access through these links and QR codes will stop."
+msgstr "Κατανοώ ότι η πρόσβαση μέσω αυτών των συνδέσμων και κωδικών QR θα διακοπεί."
+
+#: includes/admin/class-aiesk-admin-health.php:23
+msgid "Indexed reports"
+msgstr "Αναφορές στο ευρετήριο"
+
+#: includes/sharing/class-aiesk-share-email.php:31
+msgid "Invalid JSON"
+msgstr "Μη έγκυρα δεδομένα JSON"
+
+#: includes/class-aiesk-frontend.php:148
+msgid "Invalid nonce"
+msgstr "Μη έγκυρο διακριτικό ασφαλείας"
+
+#: includes/class-aiesk-i18n.php:104
+msgid "Keep link"
+msgstr "Διατήρηση συνδέσμου"
+
+#: includes/class-aiesk-i18n.php:105
+msgid "Keep saved report"
+msgstr "Διατήρηση αντιγράφου"
+
+#: includes/class-aiesk-privacy.php:397
+msgid "Last cleanup"
+msgstr "Τελευταία εκκαθάριση"
+
+#: includes/admin/class-aiesk-admin-health.php:40
+msgid "Last completed batch"
+msgstr "Τελευταία ολοκληρωμένη παρτίδα"
+
+#: includes/admin/class-aiesk-admin-styles.php:64
+msgid "Layout"
+msgstr "Διάταξη"
+
+#: includes/class-aiesk-privacy.php:392
+msgid "Legacy QR images"
+msgstr "Παλιές εικόνες QR"
+
+#: includes/admin/class-aiesk-admin-health.php:34
+msgid "Legacy temporary records"
+msgstr "Προσωρινές εγγραφές παλαιότερης έκδοσης"
+
+#: includes/admin/class-aiesk-admin-health.php:30
+msgid "Limit per account"
+msgstr "Όριο ανά λογαριασμό"
+
+msgid "Limits apply to new shares. Teachers can always view, revoke or delete their existing links. Creation is limited to 20 links per five minutes, downloads to 20 per five minutes, and email to 10 per ten minutes."
+msgstr "Τα όρια ισχύουν για νέες κοινοποιήσεις. Οι εκπαιδευτικοί μπορούν πάντα να βλέπουν, να ανακαλούν ή να διαγράφουν τους υπάρχοντες συνδέσμους τους. Επιτρέπονται έως 20 νέοι σύνδεσμοι και 20 λήψεις ανά πέντε λεπτά, καθώς και 10 email ανά δέκα λεπτά."
+
+#: includes/class-aiesk-limits.php:26
+msgid "Limits apply to new shares. Teachers can always view, revoke or delete their existing links. Creation is limited to 20 links per five minutes, downloads to 20 per five minutes, cloud saves to 10 per five minutes, and email to 10 per ten minutes."
+msgstr "Τα όρια ισχύουν για νέες κοινοποιήσεις. Οι εκπαιδευτικοί μπορούν πάντα να βλέπουν, να ανακαλούν ή να διαγράφουν τους υπάρχοντες συνδέσμους τους. Επιτρέπονται έως 20 νέοι σύνδεσμοι, 20 λήψεις και 10 αποθηκεύσεις στο cloud ανά πέντε λεπτά, καθώς και 10 email ανά δέκα λεπτά."
+
+#: includes/class-aiesk-i18n.php:106
+msgid "Link copied"
+msgstr "Ο σύνδεσμος αντιγράφηκε"
+
+#: includes/class-aiesk-i18n.php:107
+msgid "Link expires after"
+msgstr "Ο σύνδεσμος λήγει σε"
+
+#: includes/class-aiesk-i18n.php:108
+msgid "Link revoked"
+msgstr "Ο σύνδεσμος ανακλήθηκε"
+
+#: includes/class-aiesk-i18n.php:109
+msgid "Link revoked. Public access is closed."
+msgstr "Ο σύνδεσμος ανακλήθηκε. Η δημόσια πρόσβαση διακόπηκε."
+
+#: includes/class-aiesk-i18n.php:110
+msgid "Link selected. Press Ctrl+C or ⌘C to copy."
+msgstr "Ο σύνδεσμος επιλέχθηκε. Πατήστε Ctrl+C ή ⌘C για αντιγραφή."
+
+#: includes/class-aiesk-i18n.php:111
+msgid "Link selected. Use Copy or press Ctrl+C / ⌘C."
+msgstr "Ο σύνδεσμος επιλέχθηκε. Επιλέξτε Αντιγραφή ή πατήστε Ctrl+C / ⌘C."
+
+#: includes/class-aiesk-i18n.php:112
+msgid "Link unavailable"
+msgstr "Ο σύνδεσμος δεν είναι διαθέσιμος"
+
+#: includes/class-aiesk-i18n.php:113
+msgid "Loading preview…"
+msgstr "Φόρτωση προεπισκόπησης…"
+
+#: includes/class-aiesk-i18n.php:114
+msgid "Loading shared links…"
+msgstr "Φόρτωση συνδέσμων…"
+
+#: includes/frontend/class-aiesk-dashboard.php:177
+msgid "Loading your shared links…"
+msgstr "Φόρτωση των συνδέσμων σας…"
+
+#: includes/class-aiesk-helpers.php:328
+msgid "Log in to manage your shared links."
+msgstr "Συνδεθείτε για να διαχειριστείτε τους συνδέσμους σας."
+
+#: includes/class-aiesk-frontend.php:125
+msgid "Login required"
+msgstr "Απαιτείται σύνδεση"
+
+#: includes/class-aiesk-helpers.php:47
+msgid "Login required to use AI Share Kit."
+msgstr "Απαιτείται σύνδεση για να χρησιμοποιήσετε το AI Share Kit."
+
+#: includes/admin/class-aiesk-admin-health.php:45
+msgid "Maintenance runs in bounded batches. Scheduled times depend on WordPress cron; low-traffic sites may need a server cron job."
+msgstr "Η συντήρηση εκτελείται σε περιορισμένες παρτίδες. Οι προγραμματισμένες ώρες εξαρτώνται από το cron του WordPress· ιστότοποι με χαμηλή επισκεψιμότητα ενδέχεται να χρειάζονται εργασία cron στον διακομιστή."
+
+#: includes/class-aiesk-i18n.php:115
+msgid "Manage my shared links"
+msgstr "Διαχείριση συνδέσμων"
+
+#: includes/frontend/class-aiesk-connections.php:34
+msgid "Manage your own cloud accounts, even when there is no report to share."
+msgstr "Διαχειριστείτε τους δικούς σας λογαριασμούς cloud, ακόμη και όταν δεν υπάρχει αναφορά για κοινοποίηση."
+
+#: includes/admin/class-aiesk-admin-ttl.php:105
+msgid "Maximum lifetime (hours)"
+msgstr "Μέγιστη διάρκεια ισχύος (ώρες)"
+
+#: includes/class-aiesk-limits.php:28
+msgid "Maximum report storage per account (MiB)"
+msgstr "Μέγιστος χώρος αναφορών ανά λογαριασμό (MiB)"
+
+#: includes/class-aiesk-limits.php:28
+msgid "Maximum stored reports per account"
+msgstr "Μέγιστος αριθμός αποθηκευμένων αναφορών ανά λογαριασμό"
+
+#: includes/routes/class-aiesk-rest.php:97
+msgid "Method not allowed."
+msgstr "Η μέθοδος δεν επιτρέπεται."
+
+#: includes/admin/class-aiesk-admin-health.php:21
+msgid "Migration cursor"
+msgstr "Σημείο προόδου μεταφοράς"
+
+#: includes/sharing/class-aiesk-share-email.php:51
+msgid "Missing required fields"
+msgstr "Λείπουν υποχρεωτικά πεδία"
+
+msgid "Missing title or html"
+msgstr "Λείπει ο τίτλος ή το περιεχόμενο HTML"
+
+#: includes/class-aiesk-i18n.php:116
+msgid "Months (30 days)"
+msgstr "Μήνες (30 ημέρες)"
+
+#: includes/frontend/class-aiesk-dashboard.php:166
+msgid "My links"
+msgstr "Οι σύνδεσμοί μου"
+
+#: includes/class-aiesk-i18n.php:117 includes/frontend/class-aiesk-dashboard.php:68 includes/frontend/class-aiesk-dashboard.php:68 includes/frontend/class-aiesk-dashboard.php:137
+msgid "My shared links"
+msgstr "Οι σύνδεσμοί μου"
+
+#: includes/frontend/class-aiesk-dashboard.php:182
+msgid "Next"
+msgstr "Επόμενη"
+
+#: includes/admin/class-aiesk-admin-health.php:36
+msgid "Next cleanup continuation"
+msgstr "Επόμενη συνέχεια εκκαθάρισης"
+
+#: includes/admin/class-aiesk-admin-health.php:22
+msgid "Next index batch"
+msgstr "Επόμενη παρτίδα ευρετηρίου"
+
+#: includes/admin/class-aiesk-admin-health.php:43
+msgid "Next retention continuation"
+msgstr "Επόμενη συνέχεια διαγραφής βάσει χρόνου διατήρησης"
+
+#: includes/admin/class-aiesk-admin-health.php:42
+msgid "Next scheduled batch"
+msgstr "Επόμενη προγραμματισμένη παρτίδα"
+
+#: includes/admin/class-aiesk-admin-health.php:35
+msgid "Next scheduled cleanup"
+msgstr "Επόμενη προγραμματισμένη εκκαθάριση"
+
+#: includes/exports/class-aiesk-export-docx.php:33 includes/exports/class-aiesk-export-pdf.php:33
+msgid "No HTML provided"
+msgstr "Δεν δόθηκε περιεχόμενο HTML"
+
+#: includes/admin/class-aiesk-admin-health.php:41
+msgid "No completed batch yet"
+msgstr "Δεν έχει ολοκληρωθεί ακόμη καμία παρτίδα"
+
+#: includes/class-aiesk-i18n.php:118
+msgid "No completed response is available yet."
+msgstr "Δεν υπάρχει ακόμη ολοκληρωμένη απάντηση."
+
+#: includes/class-aiesk-i18n.php:119
+msgid "No expiry recorded"
+msgstr "Δεν έχει οριστεί λήξη"
+
+#: includes/class-aiesk-i18n.php:120
+msgid "No matching links"
+msgstr "Δεν βρέθηκαν σύνδεσμοι"
+
+#: includes/class-aiesk-i18n.php:121
+msgid "No preview is available."
+msgstr "Δεν υπάρχει διαθέσιμη προεπισκόπηση."
+
+#: includes/class-aiesk-helpers.php:79
+msgid "No shareable content was provided."
+msgstr "Δεν δόθηκε περιεχόμενο για κοινοποίηση."
+
+#: includes/class-aiesk-frontend.php:88
+msgid "Not allowed"
+msgstr "Η ενέργεια δεν επιτρέπεται"
+
+#: includes/class-aiesk-i18n.php:122
+msgid "Not connected"
+msgstr "Μη συνδεδεμένος"
+
+#: includes/class-aiesk-i18n.php:123
+msgid "Not recorded"
+msgstr "Δεν έχει καταγραφεί"
+
+#: includes/admin/class-aiesk-admin-health.php:55
+msgid "Not scheduled"
+msgstr "Δεν έχει προγραμματιστεί"
+
+#: includes/class-aiesk-privacy.php:318
+msgid "Not set"
+msgstr "Δεν έχει οριστεί"
+
+#: includes/admin/class-aiesk-admin-health.php:55
+msgid "Not yet recorded"
+msgstr "Δεν έχει καταγραφεί ακόμη"
+
+#: includes/class-aiesk-uninstall.php:23
+msgid "Off by default: stored shared reports remain for reinstallation. Enable only if you want to remove those copies and their links permanently. Original AI Engine conversations, recipient copies and cloud files are never deleted. On multisite, each site uses its own saved choice."
+msgstr "Απενεργοποιημένο από προεπιλογή: οι αποθηκευμένες κοινοποιημένες αναφορές παραμένουν διαθέσιμες για επανεγκατάσταση. Ενεργοποιήστε το μόνο αν θέλετε να αφαιρέσετε οριστικά αυτά τα αντίγραφα και τους συνδέσμους τους. Οι αρχικές συνομιλίες του AI Engine, τα αντίγραφα των παραληπτών και τα αρχεία cloud δεν διαγράφονται ποτέ. Σε δίκτυο πολλών ιστοτόπων, κάθε ιστότοπος χρησιμοποιεί τη δική του αποθηκευμένη επιλογή."
+
+#: includes/class-aiesk-privacy.php:394
+msgid "Older QR integrations stored images in public uploads. Someone who obtained an image could read its share URL while that link was active. Current sharing controls generate QR images in the browser."
+msgstr "Παλαιότερες διασυνδέσεις QR αποθήκευαν εικόνες στον δημόσιο φάκελο μεταφορτώσεων. Όποιος αποκτούσε μια τέτοια εικόνα μπορούσε να διαβάσει τον σύνδεσμο κοινοποίησης και να τον χρησιμοποιήσει όσο ήταν ενεργός. Τα τρέχοντα εργαλεία κοινοποίησης δημιουργούν εικόνες QR στο πρόγραμμα περιήγησης."
+
+#: includes/class-aiesk-i18n.php:124
+msgid "One response. A link that expires. You choose who receives it."
+msgstr "Μία απάντηση, με σύνδεσμο που λήγει. Εσείς επιλέγετε σε ποιον θα τον στείλετε."
+
+#: includes/class-aiesk-frontend.php:120 includes/frontend/class-aiesk-frontend-render.php:90
+msgid "OneDrive"
+msgstr "OneDrive"
+
+msgid "OneDrive OAuth"
+msgstr "OneDrive OAuth"
+
+msgid "OneDrive OAuth URL not configured yet"
+msgstr "Δεν έχει οριστεί ακόμη η διεύθυνση OAuth του OneDrive"
+
+msgid "OneDrive OAuth callback received. Please finalize token storage in provider code."
+msgstr "Ελήφθη η απόκριση OAuth του OneDrive. Ολοκληρώστε την αποθήκευση του διακριτικού στον κώδικα διασύνδεσης του παρόχου."
+
+msgid "OneDrive authorization required"
+msgstr "Απαιτείται εξουσιοδότηση OneDrive"
+
+msgid "OneDrive upload not connected yet"
+msgstr "Η μεταφόρτωση στο OneDrive δεν έχει συνδεθεί ακόμη"
+
+#: includes/class-aiesk-link-manager.php:55
+msgid "Only administrators can view all shared links."
+msgstr "Μόνο οι διαχειριστές μπορούν να δουν τους συνδέσμους όλων των χρηστών."
+
+#: includes/sharing/class-aiesk-share-link.php:31
+msgid "Only registered users can create private links."
+msgstr "Μόνο οι εγγεγραμμένοι χρήστες μπορούν να δημιουργούν ιδιωτικούς συνδέσμους."
+
+#: includes/class-aiesk-i18n.php:125
+msgid "Only this response is included. The rest of the conversation stays private."
+msgstr "Περιλαμβάνεται μόνο αυτή η απάντηση. Η υπόλοιπη συνομιλία παραμένει ιδιωτική."
+
+#: includes/class-aiesk-i18n.php:126
+msgid "Only this response is shared. You choose who receives it and when the link expires."
+msgstr "Κοινοποιείται μόνο αυτή η απάντηση. Εσείς επιλέγετε ποιος τη λαμβάνει και πότε λήγει ο σύνδεσμος."
+
+#: includes/admin/class-aiesk-admin-cloud.php:38
+msgid "Open application console"
+msgstr "Άνοιγμα κονσόλας εφαρμογής"
+
+#: includes/class-aiesk-i18n.php:127
+msgid "Open saved file"
+msgstr "Άνοιγμα αποθηκευμένου αρχείου"
+
+#: includes/class-aiesk-i18n.php:128
+msgid "Open {provider}"
+msgstr "Άνοιγμα {provider}"
+
+#: includes/class-aiesk-i18n.php:129
+msgid "Opening account connection…"
+msgstr "Άνοιγμα σύνδεσης λογαριασμού…"
+
+#: includes/class-aiesk-i18n.php:130
+msgid "Opening the account connection window…"
+msgstr "Άνοιγμα παραθύρου σύνδεσης λογαριασμού…"
+
+#: includes/admin/class-aiesk-admin-health.php:57
+msgid "Overdue"
+msgstr "Σε καθυστέρηση"
+
+#: includes/class-aiesk-frontend.php:116
+msgid "PDF"
+msgstr "PDF"
+
+#: includes/class-aiesk-i18n.php:131
+msgid "PDF (.pdf)"
+msgstr "PDF (.pdf)"
+
+#: includes/frontend/class-aiesk-frontend-render.php:87
+msgid "PDF document"
+msgstr "Έγγραφο PDF"
+
+#: includes/exports/class-aiesk-export-pdf.php:50
+msgid "PDF generator did not return a PDF file"
+msgstr "Η λειτουργία δημιουργίας PDF δεν επέστρεψε αρχείο PDF"
+
+#: includes/exports/class-aiesk-export-pdf.php:41
+msgid "PDF generator not connected yet"
+msgstr "Η λειτουργία δημιουργίας PDF δεν έχει συνδεθεί ακόμη"
+
+#: includes/admin/class-aiesk-admin-health.php:32
+msgid "Pending conversion reservations"
+msgstr "Δεσμεύσεις χώρου για μετατροπές σε αναμονή"
+
+#: includes/class-aiesk-privacy.php:114
+msgid "Permanent deletion could not be completed. Please try again or contact an administrator."
+msgstr "Δεν ήταν δυνατή η ολοκλήρωση της οριστικής διαγραφής. Δοκιμάστε ξανά ή επικοινωνήστε με διαχειριστή."
+
+#: includes/class-aiesk-uninstall.php:22
+msgid "Permanently delete shared report copies when this plugin is deleted."
+msgstr "Οριστική διαγραφή των αντιγράφων κοινοποιημένων αναφορών κατά τη διαγραφή αυτού του προσθέτου."
+
+#: includes/class-aiesk-i18n.php:132
+msgid "Permanently delete this saved report?"
+msgstr "Οριστική διαγραφή του αντιγράφου;"
+
+#: includes/frontend/class-aiesk-dashboard.php:131
+msgid "Please sign in to manage your shared links."
+msgstr "Συνδεθείτε για να διαχειριστείτε τους συνδέσμους σας."
+
+#: includes/class-aiesk-limits.php:40 includes/class-aiesk-download-budget.php:90
+msgid "Please sign in to share a report."
+msgstr "Συνδεθείτε για να κοινοποιήσετε μια αναφορά."
+
+#: includes/class-aiesk-i18n.php:133
+msgid "Please wait for the response to finish."
+msgstr "Περιμένετε να ολοκληρωθεί η απάντηση."
+
+#: includes/class-aiesk-i18n.php:134
+msgid "Prepare PDF"
+msgstr "Προετοιμασία PDF"
+
+#: includes/class-aiesk-i18n.php:135
+msgid "Prepare Word document"
+msgstr "Προετοιμασία εγγράφου Word"
+
+#: includes/class-aiesk-i18n.php:136
+msgid "Prepare email draft"
+msgstr "Προετοιμασία προσχεδίου email"
+
+#: includes/class-aiesk-i18n.php:137
+msgid "Preparing response…"
+msgstr "Προετοιμασία απάντησης…"
+
+#: includes/class-aiesk-i18n.php:138
+msgid "Preparing selected response…"
+msgstr "Προετοιμασία επιλεγμένης απάντησης…"
+
+#: includes/class-aiesk-i18n.php:139
+msgid "Preparing your download…"
+msgstr "Προετοιμασία αρχείου…"
+
+#: includes/class-aiesk-i18n.php:140
+msgid "Preview"
+msgstr "Προεπισκόπηση"
+
+#: includes/class-aiesk-i18n.php:141
+msgid "Preview selected response"
+msgstr "Προεπισκόπηση επιλεγμένης απάντησης"
+
+#: includes/class-aiesk-i18n.php:142
+msgid "Preview this response"
+msgstr "Προεπισκόπηση αυτής της απάντησης"
+
+#: includes/frontend/class-aiesk-dashboard.php:180
+msgid "Previous"
+msgstr "Προηγούμενη"
+
+#: includes/admin/class-aiesk-admin-styles.php:78
+msgid "Primary Color"
+msgstr "Βασικό χρώμα"
+
+#: includes/class-aiesk-admin-menu.php:39
+msgid "Privacy & retention"
+msgstr "Απόρρητο και διατήρηση"
+
+#: includes/class-aiesk-i18n.php:143
+msgid "Private link created"
+msgstr "Ο ιδιωτικός σύνδεσμος δημιουργήθηκε"
+
+#: includes/class-aiesk-i18n.php:144
+msgid "Public access closed"
+msgstr "Η δημόσια πρόσβαση διακόπηκε"
+
+#: includes/class-aiesk-privacy.php:122
+msgid "Public access is closed, but permanent deletion could not be completed."
+msgstr "Η δημόσια πρόσβαση έχει αποκλειστεί, αλλά η οριστική διαγραφή δεν ολοκληρώθηκε."
+
+#: includes/admin/class-aiesk-admin-sharing.php:23
+msgid "QR Code (TTL for guests)"
+msgstr "Κωδικός QR (διάρκεια ισχύος για επισκέπτες)"
+
+#: includes/class-aiesk-i18n.php:145 includes/frontend/class-aiesk-frontend-render.php:82
+msgid "QR code"
+msgstr "Κωδικός QR"
+
+#: includes/class-aiesk-i18n.php:146
+msgid "QR code for the private share link"
+msgstr "Κωδικός QR για τον ιδιωτικό σύνδεσμο κοινοποίησης"
+
+#: includes/class-aiesk-i18n.php:147
+msgid "QR code for this shared report"
+msgstr "Κωδικός QR για αυτή την κοινοποιημένη αναφορά"
+
+#: includes/sharing/class-aiesk-share-qr.php:21
+msgid "QR codes are now generated privately in your browser. Open Share or My shared links and choose QR code."
+msgstr "Οι κωδικοί QR δημιουργούνται πλέον ιδιωτικά στο πρόγραμμα περιήγησής σας. Ανοίξτε την Κοινοποίηση ή την ενότητα «Οι σύνδεσμοί μου» και επιλέξτε Κωδικός QR."
+
+#: includes/admin/class-aiesk-admin-health.php:20
+msgid "Ready"
+msgstr "Έτοιμο"
+
+#: includes/class-aiesk-i18n.php:148
+msgid "Ready to share"
+msgstr "Έτοιμο για κοινοποίηση"
+
+#: includes/class-aiesk-i18n.php:149
+msgid "Recipient email"
+msgstr "Email παραλήπτη"
+
+#: includes/class-aiesk-i18n.php:150
+msgid "Reconnect"
+msgstr "Επανασύνδεση"
+
+#: includes/class-aiesk-i18n.php:151
+msgid "Reconnect %s"
+msgstr "Επανασύνδεση με %s"
+
+#: includes/class-aiesk-i18n.php:152
+msgid "Reconnect required"
+msgstr "Απαιτείται επανασύνδεση"
+
+#: includes/frontend/class-aiesk-dashboard.php:154
+msgid "Refresh"
+msgstr "Ανανέωση"
+
+#: includes/admin/class-aiesk-admin-health.php:51
+msgid "Refresh checks"
+msgstr "Ανανέωση ελέγχων"
+
+#: includes/frontend/class-aiesk-dashboard.php:152
+msgid "Refresh shared links"
+msgstr "Ανανέωση συνδέσμων"
+
+#: includes/class-aiesk-i18n.php:153 includes/frontend/class-aiesk-connections.php:35
+msgid "Refresh status"
+msgstr "Ανανέωση κατάστασης"
+
+#: includes/admin/class-aiesk-admin-cloud.php:27
+msgid "Register a Web application supporting work, school and personal Microsoft accounts. Add the callback below and delegated Files.ReadWrite.AppFolder plus offline_access permissions. Files are saved in the application folder under Apps."
+msgstr "Καταχωρίστε εφαρμογή τύπου Web application που υποστηρίζει εταιρικούς, σχολικούς και προσωπικούς λογαριασμούς Microsoft. Προσθέστε την παρακάτω διεύθυνση επιστροφής και τα εκχωρημένα δικαιώματα Files.ReadWrite.AppFolder και offline_access. Τα αρχεία αποθηκεύονται στον φάκελο της εφαρμογής μέσα στο Apps."
+
+#: includes/admin/class-aiesk-admin-cloud.php:22
+msgid "Register one application with each service you want to offer. Enter its client ID and secret here, then enable that destination. Teachers authorise their own cloud accounts from Share or Connected accounts in their dashboard; they do not share a school account."
+msgstr "Καταχωρίστε μία εφαρμογή σε κάθε υπηρεσία που θέλετε να προσφέρετε. Εισαγάγετε εδώ το αναγνωριστικό και το μυστικό κλειδί της και έπειτα ενεργοποιήστε την υπηρεσία. Οι εκπαιδευτικοί εξουσιοδοτούν τους δικούς τους λογαριασμούς cloud από την Κοινοποίηση ή τους Συνδεδεμένους λογαριασμούς στον πίνακα ελέγχου τους, χωρίς να μοιράζονται σχολικό λογαριασμό."
+
+msgid "Register one application with each service you want to offer. Enter its client ID and secret here, then enable that destination. Teachers authorise their own cloud accounts from the Share menu; they do not share a school account."
+msgstr "Καταχωρίστε μία εφαρμογή σε κάθε υπηρεσία που θέλετε να προσφέρετε. Εισαγάγετε εδώ το αναγνωριστικό και το μυστικό κλειδί της και έπειτα ενεργοποιήστε την υπηρεσία. Οι εκπαιδευτικοί εξουσιοδοτούν τους δικούς τους λογαριασμούς cloud από το μενού Κοινοποίηση, χωρίς να μοιράζονται σχολικό λογαριασμό."
+
+#: includes/class-aiesk-i18n.php:154
+msgid "Reload page"
+msgstr "Ανανέωση σελίδας"
+
+#: includes/class-aiesk-i18n.php:155
+msgid "Reload this page or sign in again to manage your shared links."
+msgstr "Ανανεώστε τη σελίδα ή συνδεθείτε ξανά για να διαχειριστείτε τους συνδέσμους σας."
+
+#: includes/admin/class-aiesk-admin-cloud.php:45
+msgid "Remove the stored application secret"
+msgstr "Αφαίρεση αποθηκευμένου μυστικού κλειδιού εφαρμογής"
+
+#: includes/class-aiesk-privacy.php:304
+msgid "Report content"
+msgstr "Περιεχόμενο αναφοράς"
+
+#: includes/class-aiesk-privacy.php:338
+msgid "Report erasure paused because its progress expired. Start a new erasure request to finish."
+msgstr "Η διαγραφή των αναφορών διακόπηκε επειδή έληξε η καταγεγραμμένη πρόοδος της διαδικασίας. Ξεκινήστε νέο αίτημα διαγραφής για να ολοκληρωθεί."
+
+#: includes/admin/class-aiesk-admin-health.php:19
+msgid "Report index"
+msgstr "Ευρετήριο αναφορών"
+
+#: includes/class-aiesk-i18n.php:156
+msgid "Report preview"
+msgstr "Προεπισκόπηση αναφοράς"
+
+#: includes/admin/class-aiesk-admin-health.php:25
+msgid "Reports awaiting retention deletion"
+msgstr "Αναφορές σε αναμονή διαγραφής βάσει χρόνου διατήρησης"
+
+#: includes/class-aiesk-privacy.php:402
+msgid "Reports needing review (IDs only):"
+msgstr "Αναφορές που χρειάζονται έλεγχο (μόνο αναγνωριστικά):"
+
+#: includes/class-aiesk-i18n.php:157
+msgid "Response"
+msgstr "Απάντηση"
+
+#: includes/class-aiesk-i18n.php:158
+msgid "Response {number}"
+msgstr "Απάντηση {number}"
+
+#: includes/class-aiesk-i18n.php:159
+msgid "Response {number} · Latest"
+msgstr "Απάντηση {number} · Πιο πρόσφατη"
+
+#: includes/class-aiesk-i18n.php:160
+msgid "Response {number}: {title}"
+msgstr "Απάντηση {number}: {title}"
+
+#: includes/admin/class-aiesk-admin-health.php:39
+msgid "Retention maintenance"
+msgstr "Συντήρηση κανόνων διατήρησης"
+
+#: includes/class-aiesk-i18n.php:161
+msgid "Revoke"
+msgstr "Ανάκληση"
+
+#: includes/class-aiesk-i18n.php:162
+msgid "Revoke access"
+msgstr "Διακοπή πρόσβασης"
+
+#: includes/class-aiesk-i18n.php:163
+msgid "Revoke link"
+msgstr "Ανάκληση συνδέσμου"
+
+#: includes/class-aiesk-privacy.php:411
+msgid "Revoke links and remove legacy QR images"
+msgstr "Ανάκληση συνδέσμων και αφαίρεση παλιών εικόνων QR"
+
+#: includes/class-aiesk-i18n.php:164
+msgid "Revoke now"
+msgstr "Ανάκληση τώρα"
+
+#: includes/class-aiesk-i18n.php:165
+msgid "Revoke this link?"
+msgstr "Να ανακληθεί ο σύνδεσμος;"
+
+#: includes/class-aiesk-i18n.php:166 includes/frontend/class-aiesk-dashboard.php:173
+msgid "Revoked"
+msgstr "Ανακλήθηκε"
+
+#: includes/class-aiesk-privacy.php:309
+msgid "Revoked (UTC)"
+msgstr "Ανάκληση (UTC)"
+
+#: includes/class-aiesk-i18n.php:167
+msgid "Revoked {date}"
+msgstr "Ανακλήθηκε: {date}"
+
+#: includes/class-aiesk-i18n.php:168
+msgid "Revoking access…"
+msgstr "Διακοπή πρόσβασης…"
+
+#: includes/class-aiesk-i18n.php:169
+msgid "Revoking link…"
+msgstr "Ανάκληση συνδέσμου…"
+
+#: includes/class-aiesk-privacy.php:465
+msgid "Revoking or expiring a link stops public access but does not immediately delete the stored report. New shares use the retention policy recorded when they are created: the default is deletion 30 days after expiry or revocation. Administrators can choose 0 for manual deletion or 1–365 days for new shares. Existing shares keep their recorded policy; older shares without one require manual deletion. Cleanup depends on the site’s scheduled tasks."
+msgstr "Η ανάκληση ή η λήξη ενός συνδέσμου διακόπτει τη δημόσια πρόσβαση, αλλά δεν διαγράφει αμέσως την αποθηκευμένη αναφορά. Για κάθε νέα κοινοποίηση καταγράφεται η ισχύουσα πολιτική διατήρησης: από προεπιλογή προβλέπεται διαγραφή 30 ημέρες μετά τη λήξη ή την ανάκληση. Οι διαχειριστές μπορούν να επιλέξουν 0 για χειροκίνητη διαγραφή ή 1–365 ημέρες για νέες κοινοποιήσεις. Οι υπάρχουσες κοινοποιήσεις διατηρούν την καταγεγραμμένη πολιτική τους· παλιότερες κοινοποιήσεις χωρίς τέτοια πολιτική χρειάζονται χειροκίνητη διαγραφή. Η εκκαθάριση εξαρτάται από τις προγραμματισμένες εργασίες του ιστοτόπου."
+
+#: includes/admin/class-aiesk-admin-cloud.php:47
+msgid "Save application settings"
+msgstr "Αποθήκευση ρυθμίσεων εφαρμογής"
+
+#: includes/admin/class-aiesk-admin-sharing.php:26
+msgid "Save as .DOCX"
+msgstr "Αποθήκευση ως .DOCX"
+
+#: includes/admin/class-aiesk-admin-sharing.php:27
+msgid "Save as native .PDF"
+msgstr "Αποθήκευση ως αρχείο .PDF"
+
+#: includes/class-aiesk-i18n.php:170 includes/admin/class-aiesk-admin-sharing.php:28
+msgid "Save to Dropbox"
+msgstr "Αποθήκευση στο Dropbox"
+
+#: includes/class-aiesk-i18n.php:171 includes/admin/class-aiesk-admin-sharing.php:29
+msgid "Save to Google Drive"
+msgstr "Αποθήκευση στο Google Drive"
+
+#: includes/class-aiesk-i18n.php:172 includes/admin/class-aiesk-admin-sharing.php:30
+msgid "Save to OneDrive"
+msgstr "Αποθήκευση στο OneDrive"
+
+#: includes/admin/class-aiesk-admin-cloud.php:23
+msgid "Saved cloud files are independent copies. Expiring, revoking or deleting a share link does not delete those files. Disconnecting stops this site from using the stored connection; existing cloud files stay in place."
+msgstr "Τα αρχεία που αποθηκεύονται στο cloud είναι ανεξάρτητα αντίγραφα. Η λήξη, η ανάκληση ή η διαγραφή ενός συνδέσμου κοινοποίησης δεν διαγράφουν αυτά τα αρχεία. Η αποσύνδεση εμποδίζει τον ιστότοπο να χρησιμοποιεί την αποθηκευμένη σύνδεση, ενώ τα υπάρχοντα αρχεία παραμένουν στο cloud."
+
+#: includes/providers/class-aiesk-cloud-files.php:111
+msgid "Saved report"
+msgstr "Αποθηκευμένη αναφορά"
+
+#: includes/class-aiesk-i18n.php:173
+msgid "Saved report permanently deleted. Its link and QR code no longer work."
+msgstr "Το αντίγραφο διαγράφηκε οριστικά. Ο σύνδεσμος και ο κωδικός QR του δεν λειτουργούν πλέον."
+
+#: includes/class-aiesk-i18n.php:174
+msgid "Saved report will be deleted on {date}."
+msgstr "Το αποθηκευμένο αντίγραφο θα διαγραφεί στις {date}."
+
+#: includes/class-aiesk-i18n.php:175
+msgid "Saved to {provider}"
+msgstr "Αποθηκεύτηκε στην υπηρεσία {provider}"
+
+#: includes/class-aiesk-i18n.php:176
+msgid "Saved to {provider}: {file}"
+msgstr "Αποθηκεύτηκε στην υπηρεσία {provider}: {file}"
+
+#: includes/class-aiesk-i18n.php:177
+msgid "Saving to {provider} continues in the background. Wait for the result before saving again."
+msgstr "Η αποθήκευση στην υπηρεσία {provider} συνεχίζεται στο παρασκήνιο. Περιμένετε το αποτέλεσμα πριν αποθηκεύσετε ξανά."
+
+#: includes/class-aiesk-i18n.php:178
+msgid "Saving your file…"
+msgstr "Αποθήκευση αρχείου…"
+
+#: includes/admin/class-aiesk-admin-ttl.php:222
+msgid "Scrollable report table"
+msgstr "Πίνακας αναφοράς με δυνατότητα κύλισης"
+
+#: includes/frontend/class-aiesk-dashboard.php:161
+msgid "Search"
+msgstr "Αναζήτηση"
+
+#: includes/frontend/class-aiesk-dashboard.php:159
+msgid "Search report titles"
+msgstr "Αναζήτηση τίτλων αναφορών"
+
+#: includes/frontend/class-aiesk-dashboard.php:160
+msgid "Search report titles…"
+msgstr "Αναζήτηση τίτλων αναφορών…"
+
+#: includes/frontend/class-aiesk-dashboard.php:158
+msgid "Search shared reports"
+msgstr "Αναζήτηση κοινοποιημένων αναφορών"
+
+#: includes/providers/class-aiesk-cloud-files.php:62
+msgid "Send a valid report request."
+msgstr "Στείλτε έγκυρο αίτημα αναφοράς."
+
+#: includes/class-aiesk-i18n.php:179
+msgid "Send email"
+msgstr "Αποστολή email"
+
+#: includes/class-aiesk-i18n.php:180
+msgid "Send link"
+msgstr "Αποστολή συνδέσμου"
+
+#: includes/class-aiesk-i18n.php:181
+msgid "Sending email…"
+msgstr "Αποστολή email…"
+
+#: includes/class-aiesk-i18n.php:182
+msgid "Session expired"
+msgstr "Η σύνδεσή σας έληξε"
+
+#: includes/class-aiesk-i18n.php:183
+msgid "Session expired. Reload this page or sign in again."
+msgstr "Η σύνδεσή σας έληξε. Ανανεώστε τη σελίδα ή συνδεθείτε ξανά."
+
+#: includes/class-aiesk-i18n.php:184
+msgid "Set up %s"
+msgstr "Ρύθμιση %s"
+
+#: includes/admin/class-aiesk-admin-health.php:48 includes/admin/class-aiesk-admin-cloud.php:36
+msgid "Setup required"
+msgstr "Απαιτείται ρύθμιση"
+
+#: includes/frontend/class-aiesk-frontend-render.php:65 includes/frontend/class-aiesk-frontend-injector.php:53
+msgid "Share"
+msgstr "Κοινοποίηση"
+
+#: includes/class-aiesk-admin-menu.php:41 includes/admin/class-aiesk-admin-health.php:11
+msgid "Share Health"
+msgstr "Κατάσταση κοινοποιήσεων"
+
+#: includes/admin/class-aiesk-admin-sharing.php:22
+msgid "Share Link (TTL for guests)"
+msgstr "Σύνδεσμος κοινοποίησης (διάρκεια ισχύος για επισκέπτες)"
+
+#: includes/class-aiesk-privacy.php:305
+msgid "Share URL"
+msgstr "Διεύθυνση κοινοποίησης"
+
+#: includes/class-aiesk-i18n.php:185
+msgid "Share a private link"
+msgstr "Κοινοποίηση με ιδιωτικό σύνδεσμο"
+
+#: includes/class-aiesk-i18n.php:186
+msgid "Share a response"
+msgstr "Κοινοποίηση απάντησης"
+
+#: includes/class-aiesk-i18n.php:187
+msgid "Share link"
+msgstr "Σύνδεσμος κοινοποίησης"
+
+#: includes/class-aiesk-privacy.php:78 includes/class-aiesk-link-manager.php:211 includes/routes/class-aiesk-rest.php:71
+msgid "Share link not found."
+msgstr "Ο σύνδεσμος κοινοποίησης δεν βρέθηκε."
+
+#: includes/frontend/class-aiesk-frontend-render.php:63 includes/frontend/class-aiesk-frontend-render.php:69
+msgid "Share response"
+msgstr "Κοινοποίηση απάντησης"
+
+#: includes/class-aiesk-i18n.php:188
+msgid "Share this response"
+msgstr "Κοινοποίηση αυτής της απάντησης"
+
+#: includes/class-aiesk-i18n.php:189 includes/admin/class-aiesk-admin-sharing.php:25
+msgid "Share to Viber"
+msgstr "Κοινοποίηση στο Viber"
+
+#: includes/class-aiesk-i18n.php:190 includes/admin/class-aiesk-admin-sharing.php:24
+msgid "Share to WhatsApp"
+msgstr "Κοινοποίηση στο WhatsApp"
+
+#: includes/class-aiesk-i18n.php:191
+msgid "Share with a QR code"
+msgstr "Κοινοποίηση με κωδικό QR"
+
+#: includes/class-aiesk-helpers.php:94
+msgid "Shared AI report"
+msgstr "Κοινοποιημένη αναφορά AI"
+
+#: includes/frontend/class-aiesk-dashboard.php:179
+msgid "Shared link pages"
+msgstr "Σελίδες συνδέσμων"
+
+#: includes/frontend/class-aiesk-dashboard.php:37 includes/frontend/class-aiesk-dashboard.php:47 includes/frontend/class-aiesk-dashboard.php:52
+msgid "Shared links"
+msgstr "Κοινοποιημένοι σύνδεσμοι"
+
+#: includes/class-aiesk-privacy.php:351
+msgid "Shared report %d could not be deleted. Review it in AI Share Kit and retry erasure."
+msgstr "Η κοινοποιημένη αναφορά %d δεν μπόρεσε να διαγραφεί. Ελέγξτε την στο AI Share Kit και δοκιμάστε ξανά τη διαγραφή."
+
+#: includes/class-aiesk-index.php:314
+msgid "Shared report information could not be checked. Please try again shortly."
+msgstr "Δεν ήταν δυνατός ο έλεγχος των στοιχείων των κοινοποιημένων αναφορών. Δοκιμάστε ξανά σε λίγο."
+
+#: includes/class-aiesk-i18n.php:192
+msgid "Shared report preview"
+msgstr "Προεπισκόπηση κοινοποιημένης αναφοράς"
+
+#: includes/class-aiesk-privacy.php:300
+msgid "Shared reports"
+msgstr "Κοινοποιημένες αναφορές"
+
+#: includes/class-aiesk-link-manager.php:80
+msgid "Shared reports changed while loading. Please refresh the list."
+msgstr "Οι κοινοποιημένες αναφορές άλλαξαν κατά τη φόρτωση. Ανανεώστε τη λίστα."
+
+#: includes/class-aiesk-privacy.php:393
+msgid "Shared reports with a saved legacy QR image: %d."
+msgstr "Κοινοποιημένες αναφορές με αποθηκευμένη παλιά εικόνα QR: %d."
+
+#: includes/class-aiesk-i18n.php:193
+msgid "Shared response"
+msgstr "Κοινοποιημένη απάντηση"
+
+#: includes/class-aiesk-admin-menu.php:36
+msgid "Sharing"
+msgstr "Κοινοποίηση"
+
+#: includes/class-aiesk-i18n.php:194
+msgid "Sharing failed. Please try again."
+msgstr "Η κοινοποίηση απέτυχε. Δοκιμάστε ξανά."
+
+#: includes/class-aiesk-limits.php:144
+msgid "Sharing limits could not be checked. Please try again shortly."
+msgstr "Δεν ήταν δυνατός ο έλεγχος των ορίων κοινοποίησης. Δοκιμάστε ξανά σε λίγο."
+
+#: includes/class-aiesk-i18n.php:195
+msgid "Sharing stores a copy of this response on this website until you delete it. Expiry and revocation stop access but do not delete the copy."
+msgstr "Με την κοινοποίηση αποθηκεύεται ένα αντίγραφο της απάντησης σε αυτόν τον ιστότοπο μέχρι να το διαγράψετε. Η λήξη ή η ανάκληση διακόπτουν την πρόσβαση, αλλά δεν διαγράφουν το αντίγραφο."
+
+msgid "Sharing stores a copy of this response on this website. The copy is deleted automatically {days} days after expiry or revocation. You can delete it sooner in My shared links."
+msgstr "Με την κοινοποίηση αποθηκεύεται ένα αντίγραφο της απάντησης σε αυτόν τον ιστότοπο. Το αντίγραφο διαγράφεται αυτόματα {days} ημέρες μετά τη λήξη ή την ανάκληση. Μπορείτε να το διαγράψετε νωρίτερα από την ενότητα «Οι σύνδεσμοί μου»."
+
+#: includes/class-aiesk-i18n.php:196
+msgid "Sharing stores a copy of this response on this website. The copy is scheduled for deletion {days} days after expiry or revocation. You can delete it sooner in My shared links."
+msgstr "Με την κοινοποίηση αποθηκεύεται ένα αντίγραφο της απάντησης σε αυτόν τον ιστότοπο. Η διαγραφή του αντιγράφου προγραμματίζεται για {days} ημέρες μετά τη λήξη ή την ανάκληση. Μπορείτε να το διαγράψετε νωρίτερα από την ενότητα «Οι σύνδεσμοί μου»."
+
+#: includes/class-aiesk-privacy.php:370
+msgid "Sharing stores a separate copy of the selected report on this site. Expiry and revocation stop public access; permanent deletion also removes that stored copy and its link."
+msgstr "Με την κοινοποίηση αποθηκεύεται ξεχωριστό αντίγραφο της επιλεγμένης αναφοράς σε αυτόν τον ιστότοπο. Η λήξη και η ανάκληση διακόπτουν τη δημόσια πρόσβαση. Η οριστική διαγραφή αφαιρεί επίσης το αποθηκευμένο αντίγραφο και τον σύνδεσμό του."
+
+#: includes/frontend/class-aiesk-dashboard.php:164
+msgid "Show"
+msgstr "Εμφάνιση"
+
+#: includes/class-aiesk-i18n.php:197
+msgid "Show QR code"
+msgstr "Εμφάνιση κωδικού QR"
+
+#: includes/class-aiesk-i18n.php:198
+msgid "Sign in again"
+msgstr "Σύνδεση ξανά"
+
+#: includes/class-aiesk-i18n.php:199
+msgid "Snapshot"
+msgstr "Αποθηκευμένο αντίγραφο"
+
+#: includes/class-aiesk-i18n.php:200
+msgid "Some connections could not be checked. Use Try again beside the affected service."
+msgstr "Δεν ήταν δυνατός ο έλεγχος ορισμένων συνδέσεων. Επιλέξτε «Δοκιμάστε ξανά» στην αντίστοιχη υπηρεσία."
+
+#: includes/class-aiesk-privacy.php:306 includes/admin/class-aiesk-admin-health.php:20
+msgid "Status"
+msgstr "Κατάσταση"
+
+#: includes/admin/class-aiesk-admin-health.php:12
+msgid "Storage, background maintenance and cloud setup for this site. These checks do not open reports or contact cloud accounts."
+msgstr "Αποθήκευση, συντήρηση στο παρασκήνιο και ρύθμιση cloud για αυτόν τον ιστότοπο. Αυτοί οι έλεγχοι δεν ανοίγουν αναφορές και δεν επικοινωνούν με λογαριασμούς cloud."
+
+#: includes/admin/class-aiesk-admin-health.php:31
+msgid "Stored files and reservations"
+msgstr "Αποθηκευμένα αρχεία και δεσμεύσεις χώρου"
+
+#: includes/admin/class-aiesk-admin-health.php:24
+msgid "Stored report content"
+msgstr "Αποθηκευμένο περιεχόμενο αναφορών"
+
+#: includes/admin/class-aiesk-admin-cloud.php:44
+msgid "Stored securely; leave blank to keep"
+msgstr "Αποθηκεύτηκε με ασφάλεια· αφήστε το κενό για να διατηρηθεί"
+
+#: includes/class-aiesk-uninstall.php:15 includes/class-aiesk-privacy.php:365
+msgid "Stored shared reports"
+msgstr "Αποθηκευμένες κοινοποιημένες αναφορές"
+
+#: includes/class-aiesk-admin-menu.php:37
+msgid "Styles"
+msgstr "Μορφοποίηση"
+
+#: includes/class-aiesk-i18n.php:201
+msgid "Switch account"
+msgstr "Αλλαγή λογαριασμού"
+
+#: includes/class-aiesk-admin-menu.php:38
+msgid "TTL Links & QR"
+msgstr "Διάρκεια ισχύος συνδέσμων και QR"
+
+#: includes/class-aiesk-privacy.php:466
+msgid "Teachers may permanently delete their own shared reports; administrators may delete any shared report. The site’s personal-data export and erasure tools include reports belonging to the creator account matched by its current email. They do not locate people named within another teacher’s report. Erase shared reports before deleting or reassigning a teacher account."
+msgstr "Οι εκπαιδευτικοί μπορούν να διαγράφουν οριστικά τις δικές τους κοινοποιημένες αναφορές και οι διαχειριστές οποιαδήποτε κοινοποιημένη αναφορά. Τα εργαλεία εξαγωγής και διαγραφής προσωπικών δεδομένων του ιστοτόπου περιλαμβάνουν τις αναφορές του λογαριασμού δημιουργού, με αντιστοίχιση βάσει του τρέχοντος email του. Δεν εντοπίζουν πρόσωπα που αναφέρονται στο περιεχόμενο αναφοράς άλλου εκπαιδευτικού. Διαγράψτε τις κοινοποιημένες αναφορές πριν διαγράψετε ή μεταβιβάσετε τον λογαριασμό ενός εκπαιδευτικού."
+
+#: includes/class-aiesk-download-budget.php:61
+msgid "Temporary download storage"
+msgstr "Προσωρινός χώρος αποθήκευσης λήψεων"
+
+#: includes/admin/class-aiesk-admin-health.php:17
+msgid "Temporary download storage could not be checked. New downloads remain blocked until storage is available."
+msgstr "Δεν ήταν δυνατός ο έλεγχος του προσωρινού χώρου αποθήκευσης λήψεων. Οι νέες λήψεις παραμένουν αποκλεισμένες μέχρι να είναι διαθέσιμος ο χώρος αποθήκευσης."
+
+#: includes/class-aiesk-download-budget.php:80
+msgid "Temporary download storage could not be checked. Please try again shortly."
+msgstr "Δεν ήταν δυνατός ο έλεγχος του προσωρινού χώρου αποθήκευσης λήψεων. Δοκιμάστε ξανά σε λίγο."
+
+#: includes/class-aiesk-download-budget.php:121
+msgid "Temporary download storage is full. Download an existing file or wait for expired files to be cleaned up, then try again."
+msgstr "Ο προσωρινός χώρος αποθήκευσης λήψεων είναι πλήρης. Κατεβάστε ένα υπάρχον αρχείο ή περιμένετε να διαγραφούν τα ληγμένα αρχεία και έπειτα δοκιμάστε ξανά."
+
+#: includes/admin/class-aiesk-admin-health.php:28
+msgid "Temporary downloads"
+msgstr "Προσωρινά αρχεία λήψης"
+
+#: includes/class-aiesk-privacy.php:332
+msgid "Temporary report downloads could not be erased. Please retry the erasure request."
+msgstr "Δεν ήταν δυνατή η διαγραφή των προσωρινών αρχείων λήψης αναφορών. Υποβάλετε ξανά το αίτημα διαγραφής."
+
+#: includes/class-aiesk-download-budget.php:64
+msgid "Temporary storage for this site (MiB)"
+msgstr "Προσωρινός χώρος για αυτόν τον ιστότοπο (MiB)"
+
+#: includes/admin/class-aiesk-admin-health.php:38
+msgid "Temporary storage includes encoded file data, reservations and a small allowance per file. Expired records still count until cleanup removes them."
+msgstr "Ο προσωρινός χώρος περιλαμβάνει κωδικοποιημένα δεδομένα αρχείων, δεσμεύσεις χώρου και ένα μικρό επιπλέον ποσό ανά αρχείο. Οι ληγμένες εγγραφές εξακολουθούν να προσμετρώνται μέχρι να αφαιρεθούν με την εκκαθάριση."
+
+#: includes/class-aiesk-download-budget.php:64
+msgid "Temporary storage per account (MiB)"
+msgstr "Προσωρινός χώρος ανά λογαριασμό (MiB)"
+
+#: includes/providers/class-aiesk-cloud-files.php:169
+msgid "The OneDrive app folder could not be opened. Please reconnect OneDrive."
+msgstr "Δεν ήταν δυνατό το άνοιγμα του φακέλου εφαρμογής στο OneDrive. Συνδέστε ξανά το OneDrive."
+
+#: includes/class-aiesk-i18n.php:202
+msgid "The QR code could not be created. You can still copy the link."
+msgstr "Δεν ήταν δυνατή η δημιουργία του κωδικού QR. Μπορείτε να αντιγράψετε τον σύνδεσμο."
+
+#: includes/class-aiesk-i18n.php:203
+msgid "The QR module did not load. Reload the page or copy the link."
+msgstr "Δεν φορτώθηκε η λειτουργία QR. Ανανεώστε τη σελίδα ή αντιγράψτε τον σύνδεσμο."
+
+#: includes/class-aiesk-i18n.php:204
+msgid "The QR module did not load. Reload this page, or copy the link below."
+msgstr "Δεν φορτώθηκε η λειτουργία QR. Ανανεώστε τη σελίδα ή αντιγράψτε τον παρακάτω σύνδεσμο."
+
+#: includes/class-aiesk-i18n.php:205
+msgid "The account window was closed. Connect again when ready."
+msgstr "Το παράθυρο του λογαριασμού έκλεισε. Συνδεθείτε ξανά όταν είστε έτοιμοι."
+
+#: includes/class-aiesk-i18n.php:206
+msgid "The app needs to be available on your device. If it does not open, copy the link instead."
+msgstr "Η εφαρμογή πρέπει να είναι διαθέσιμη στη συσκευή σας. Αν δεν ανοίγει, αντιγράψτε τον σύνδεσμο."
+
+#: includes/admin/class-aiesk-admin-cloud.php:19
+msgid "The application settings could not be saved securely. Check the values and your server encryption support, then try again."
+msgstr "Δεν ήταν δυνατή η ασφαλής αποθήκευση των ρυθμίσεων εφαρμογής. Ελέγξτε τις τιμές και την υποστήριξη κρυπτογράφησης του διακομιστή και δοκιμάστε ξανά."
+
+#: includes/providers/class-aiesk-cloud-auth.php:446
+msgid "The cloud connection could not be saved securely. Try again shortly."
+msgstr "Δεν ήταν δυνατή η ασφαλής αποθήκευση της σύνδεσης cloud. Δοκιμάστε ξανά σε λίγο."
+
+#: includes/providers/class-aiesk-cloud-files.php:241
+msgid "The cloud provider could not be reached. Please try again later."
+msgstr "Δεν ήταν δυνατή η επικοινωνία με την υπηρεσία cloud. Δοκιμάστε ξανά αργότερα."
+
+#: includes/providers/class-aiesk-cloud-files.php:207
+msgid "The cloud provider could not save this file. Check available storage and the destination folder before trying again."
+msgstr "Η υπηρεσία cloud δεν μπόρεσε να αποθηκεύσει αυτό το αρχείο. Ελέγξτε τον διαθέσιμο χώρο και τον φάκελο προορισμού πριν δοκιμάσετε ξανά."
+
+#: includes/providers/class-aiesk-cloud-files.php:201
+msgid "The cloud provider is busy. Wait a few minutes before trying again."
+msgstr "Η υπηρεσία cloud είναι απασχολημένη. Περιμένετε λίγα λεπτά πριν δοκιμάσετε ξανά."
+
+#: includes/providers/class-aiesk-cloud-files.php:204
+msgid "The cloud provider refused this upload. Check storage space and your account permissions, or reconnect the account."
+msgstr "Η υπηρεσία cloud αρνήθηκε τη μεταφόρτωση. Ελέγξτε τον διαθέσιμο χώρο και τα δικαιώματα του λογαριασμού σας ή συνδέστε ξανά τον λογαριασμό."
+
+#: includes/providers/class-aiesk-cloud-files.php:210
+msgid "The cloud provider rejected the upload. Check your connection and account settings before trying again."
+msgstr "Η υπηρεσία cloud απέρριψε τη μεταφόρτωση. Ελέγξτε τη σύνδεση και τις ρυθμίσεις του λογαριασμού σας πριν δοκιμάσετε ξανά."
+
+#: includes/providers/class-aiesk-cloud-auth.php:447
+msgid "The cloud service did not complete authorisation. Try connecting again."
+msgstr "Η υπηρεσία cloud δεν ολοκλήρωσε την εξουσιοδότηση. Δοκιμάστε να συνδέσετε ξανά τον λογαριασμό."
+
+#: includes/class-aiesk-i18n.php:207
+msgid "The cloud service returned an invalid connection address."
+msgstr "Η υπηρεσία cloud επέστρεψε μη έγκυρη διεύθυνση σύνδεσης."
+
+#: includes/providers/class-aiesk-cloud-files.php:157
+msgid "The cloud upload could not be started securely. Please try again later."
+msgstr "Δεν ήταν δυνατή η ασφαλής έναρξη της μεταφόρτωσης στο cloud. Δοκιμάστε ξανά αργότερα."
+
+#: includes/class-aiesk-i18n.php:208
+msgid "The connection check timed out. Check connections before trying again."
+msgstr "Ο χρόνος αναμονής για τον έλεγχο σύνδεσης έληξε. Ελέγξτε τις συνδέσεις πριν δοκιμάσετε ξανά."
+
+#: includes/class-aiesk-i18n.php:209
+msgid "The connection check timed out. Try again."
+msgstr "Έληξε ο χρόνος ελέγχου της σύνδεσης. Δοκιμάστε ξανά."
+
+#: includes/class-aiesk-i18n.php:210
+msgid "The connection could not be updated. Try again."
+msgstr "Δεν ήταν δυνατή η ενημέρωση της σύνδεσης. Δοκιμάστε ξανά."
+
+#: includes/class-aiesk-i18n.php:211
+msgid "The conversation changed. Open Share again to select the current response."
+msgstr "Η συνομιλία άλλαξε. Ανοίξτε ξανά την Κοινοποίηση για να επιλέξετε την τρέχουσα απάντηση."
+
+#: includes/class-aiesk-helpers.php:204 includes/class-aiesk-helpers.php:229
+msgid "The download could not be opened. Please try again."
+msgstr "Δεν ήταν δυνατό το άνοιγμα του αρχείου λήψης. Δοκιμάστε ξανά."
+
+#: includes/exports/class-aiesk-export-docx.php:55 includes/exports/class-aiesk-export-pdf.php:55 includes/integrations/class-aiesk-easy-forms.php:135
+msgid "The file could not be generated. Please try again."
+msgstr "Δεν ήταν δυνατή η δημιουργία του αρχείου. Δοκιμάστε ξανά."
+
+#: includes/class-aiesk-i18n.php:212
+msgid "The file remains in your cloud account until you delete it there. No private share link was created."
+msgstr "Το αρχείο παραμένει στον λογαριασμό cloud σας μέχρι να το διαγράψετε από εκεί. Δεν δημιουργήθηκε ιδιωτικός σύνδεσμος κοινοποίησης."
+
+#: includes/class-aiesk-i18n.php:213
+msgid "The file was not confirmed saved to {provider}. Open Share to check the connection and try again."
+msgstr "Δεν επιβεβαιώθηκε η αποθήκευση του αρχείου στην υπηρεσία {provider}. Ανοίξτε την Κοινοποίηση για να ελέγξετε τη σύνδεση και να δοκιμάσετε ξανά."
+
+#: includes/admin/class-aiesk-admin-ttl.php:109
+msgid "The hard maximum is 720 hours (30 days)."
+msgstr "Το ανώτατο όριο είναι 720 ώρες (30 ημέρες)."
+
+#: includes/class-aiesk-helpers.php:127
+msgid "The maximum link lifetime is %d hours."
+msgstr "Η μέγιστη διάρκεια ισχύος συνδέσμου είναι %d ώρες."
+
+#: includes/class-aiesk-i18n.php:214
+msgid "The provider did not confirm the result. Check your cloud folder before trying again; a file may already have been saved."
+msgstr "Η υπηρεσία δεν επιβεβαίωσε το αποτέλεσμα. Ελέγξτε τον φάκελο cloud πριν δοκιμάσετε ξανά· ενδέχεται να έχει ήδη αποθηκευτεί αρχείο."
+
+#: includes/providers/class-aiesk-cloud-files.php:121
+msgid "The report could not be converted. Choose HTML or try again later."
+msgstr "Δεν ήταν δυνατή η μετατροπή της αναφοράς. Επιλέξτε HTML ή δοκιμάστε ξανά αργότερα."
+
+#: includes/providers/class-aiesk-cloud-files.php:65
+msgid "The report title and format must be text."
+msgstr "Ο τίτλος και η μορφή της αναφοράς πρέπει να είναι κείμενο."
+
+#: includes/class-aiesk-i18n.php:215
+msgid "The response changed. Close this dialog and open Share again."
+msgstr "Η απάντηση άλλαξε. Κλείστε αυτό το παράθυρο και ανοίξτε ξανά την Κοινοποίηση."
+
+#: includes/class-aiesk-privacy.php:158
+msgid "The saved QR image could not be safely removed. Ask an administrator to check the image before deleting this report."
+msgstr "Δεν ήταν δυνατή η ασφαλής αφαίρεση της αποθηκευμένης εικόνας QR. Ζητήστε από διαχειριστή να ελέγξει την εικόνα πριν διαγράψετε αυτή την αναφορά."
+
+#: includes/providers/class-aiesk-cloud-auth.php:440
+msgid "The server could not securely read or store the cloud connection. Ask the administrator to check encryption and WordPress salts."
+msgstr "Ο διακομιστής δεν μπόρεσε να διαβάσει ή να αποθηκεύσει με ασφάλεια τη σύνδεση cloud. Ζητήστε από τον διαχειριστή να ελέγξει την κρυπτογράφηση και τα κλειδιά salts του WordPress."
+
+#: includes/class-aiesk-i18n.php:216
+msgid "The server is taking too long. Please check your connection before trying again."
+msgstr "Ο διακομιστής καθυστερεί να απαντήσει. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο πριν δοκιμάσετε ξανά."
+
+#: includes/class-aiesk-i18n.php:217
+msgid "The server is taking too long. Please try again."
+msgstr "Ο διακομιστής καθυστερεί να απαντήσει. Δοκιμάστε ξανά."
+
+#: includes/class-aiesk-i18n.php:218
+msgid "The server returned an invalid download or share address."
+msgstr "Ο διακομιστής επέστρεψε μη έγκυρη διεύθυνση λήψης ή κοινοποίησης."
+
+#: includes/class-aiesk-i18n.php:219
+msgid "The server returned an invalid links list."
+msgstr "Ο διακομιστής επέστρεψε μη έγκυρη λίστα συνδέσμων."
+
+#: includes/class-aiesk-i18n.php:220
+msgid "The server returned an invalid provider address."
+msgstr "Ο διακομιστής επέστρεψε μη έγκυρη διεύθυνση υπηρεσίας."
+
+#: includes/class-aiesk-i18n.php:221
+msgid "The server returned an invalid share address."
+msgstr "Ο διακομιστής επέστρεψε μη έγκυρη διεύθυνση κοινοποίησης."
+
+#: includes/class-aiesk-i18n.php:222
+msgid "The server returned an unreadable response. Reload the page and try again."
+msgstr "Δεν ήταν δυνατή η ανάγνωση της απάντησης του διακομιστή. Ανανεώστε τη σελίδα και δοκιμάστε ξανά."
+
+#: includes/class-aiesk-privacy.php:94
+msgid "The shared report could not be found for deletion."
+msgstr "Δεν βρέθηκε η κοινοποιημένη αναφορά προς διαγραφή."
+
+#: includes/class-aiesk-helpers.php:75 includes/class-aiesk-helpers.php:83
+msgid "The shared report is too large."
+msgstr "Η κοινοποιημένη αναφορά είναι πολύ μεγάλη."
+
+#: includes/class-aiesk-helpers.php:72
+msgid "The shared report must contain text."
+msgstr "Η κοινοποιημένη αναφορά πρέπει να περιέχει κείμενο."
+
+#: includes/class-aiesk-limits.php:16 includes/providers/class-aiesk-cloud-files.php:58
+msgid "The sharing request is too large."
+msgstr "Το αίτημα κοινοποίησης είναι πολύ μεγάλο."
+
+#: includes/providers/class-aiesk-cloud-files.php:238
+msgid "The upload result could not be confirmed. Check your cloud folder before trying again to avoid a duplicate file."
+msgstr "Δεν επιβεβαιώθηκε το αποτέλεσμα της μεταφόρτωσης. Ελέγξτε τον φάκελο cloud πριν δοκιμάσετε ξανά, ώστε να μη δημιουργηθεί διπλό αρχείο."
+
+#: includes/admin/class-aiesk-admin-styles.php:49
+msgid "Theme"
+msgstr "Θέμα"
+
+#: includes/class-aiesk-download-budget.php:62
+msgid "These limits include encoded file data and a small allowance per file. Generating PDF or Word reserves space for a 10 MiB file before conversion. Space is released after download or cleanup; downloads expire within one hour."
+msgstr "Αυτά τα όρια περιλαμβάνουν κωδικοποιημένα δεδομένα αρχείων και ένα μικρό επιπλέον ποσό ανά αρχείο. Η δημιουργία PDF ή Word δεσμεύει χώρο για αρχείο 10 MiB πριν από τη μετατροπή. Ο χώρος αποδεσμεύεται μετά τη λήψη ή την εκκαθάριση· τα αρχεία λήψης λήγουν μέσα σε μία ώρα."
+
+#: includes/integrations/class-aiesk-easy-forms.php:107
+msgid "This Word export needs its assessment form. Reload the page and try again."
+msgstr "Για αυτή την εξαγωγή Word απαιτείται η φόρμα αξιολόγησης. Ανανεώστε τη σελίδα και δοκιμάστε ξανά."
+
+#: includes/class-aiesk-i18n.php:223
+msgid "This address is too long for Viber. Create a new link with Use short URL enabled, or copy the full link below."
+msgstr "Αυτή η διεύθυνση είναι πολύ μεγάλη για το Viber. Δημιουργήστε νέο σύνδεσμο με ενεργή τη Χρήση σύντομου συνδέσμου ή αντιγράψτε ολόκληρο τον παρακάτω σύνδεσμο."
+
+#: includes/providers/class-aiesk-cloud-files.php:76
+msgid "This cloud connection has not been set up by the site administrator."
+msgstr "Ο διαχειριστής του ιστοτόπου δεν έχει ρυθμίσει αυτή τη σύνδεση cloud."
+
+#: includes/providers/class-aiesk-cloud-auth.php:436
+msgid "This cloud destination is disabled by the administrator."
+msgstr "Αυτή η υπηρεσία cloud έχει απενεργοποιηθεί από τον διαχειριστή."
+
+#: includes/providers/class-aiesk-cloud-auth.php:438
+msgid "This cloud destination needs administrator setup."
+msgstr "Αυτή η υπηρεσία cloud χρειάζεται ρύθμιση από διαχειριστή."
+
+#: includes/providers/class-aiesk-cloud-auth.php:442
+msgid "This connection request has expired or was already used. Connect again from Share or Connected accounts."
+msgstr "Αυτό το αίτημα σύνδεσης έχει λήξει ή έχει ήδη χρησιμοποιηθεί. Συνδεθείτε ξανά από την Κοινοποίηση ή τους Συνδεδεμένους λογαριασμούς."
+
+msgid "This connection request has expired or was already used. Connect again from your report."
+msgstr "Αυτό το αίτημα σύνδεσης έχει λήξει ή έχει ήδη χρησιμοποιηθεί. Συνδέστε ξανά τον λογαριασμό από την αναφορά σας."
+
+#: includes/class-aiesk-helpers.php:188 includes/class-aiesk-download-budget.php:83
+msgid "This download is no longer available. Create a new download."
+msgstr "Αυτό το αρχείο λήψης δεν είναι πλέον διαθέσιμο. Δημιουργήστε νέο αρχείο για λήψη."
+
+#: includes/class-aiesk-i18n.php:224
+msgid "This download link can be used once."
+msgstr "Αυτός ο σύνδεσμος λήψης μπορεί να χρησιμοποιηθεί μία φορά."
+
+#: includes/sharing/class-aiesk-share-email.php:138
+msgid "This email contains the report selected by the sender."
+msgstr "Αυτό το email περιέχει την αναφορά που επέλεξε ο αποστολέας."
+
+#: includes/providers/class-aiesk-cloud-files.php:115
+msgid "This file converter is not available. Choose HTML instead."
+msgstr "Αυτή η λειτουργία μετατροπής αρχείων δεν είναι διαθέσιμη. Επιλέξτε HTML."
+
+#: includes/frontend/class-aiesk-frontend-injector.php:54
+msgid "This link has expired."
+msgstr "Αυτός ο σύνδεσμος έχει λήξει."
+
+#: includes/class-aiesk-i18n.php:225
+msgid "This link has expired. Public access is closed."
+msgstr "Αυτός ο σύνδεσμος έχει λήξει. Η δημόσια πρόσβαση διακόπηκε."
+
+#: includes/class-aiesk-i18n.php:226
+msgid "This link has no valid address."
+msgstr "Αυτός ο σύνδεσμος δεν έχει έγκυρη διεύθυνση."
+
+#: includes/class-aiesk-i18n.php:227
+msgid "This link is too long for Viber. Copy it instead, or create a short link."
+msgstr "Ο σύνδεσμος είναι πολύ μεγάλος για το Viber. Αντιγράψτε τον ή δημιουργήστε έναν σύντομο σύνδεσμο."
+
+#: includes/class-aiesk-i18n.php:228
+msgid "This permanently deletes the saved shared report and its link. This cannot be undone. The original assessment is not deleted."
+msgstr "Το αποθηκευμένο αντίγραφο της αναφοράς και ο σύνδεσμός του θα διαγραφούν οριστικά. Η ενέργεια δεν αναιρείται. Η αρχική αξιολόγηση δεν διαγράφεται."
+
+#: includes/admin/class-aiesk-admin-ttl.php:232
+msgid "This private link is unavailable."
+msgstr "Αυτός ο ιδιωτικός σύνδεσμος δεν είναι διαθέσιμος."
+
+#: includes/class-aiesk-i18n.php:229
+msgid "This response is too large to share. Choose a shorter response."
+msgstr "Αυτή η απάντηση είναι πολύ μεγάλη για κοινοποίηση. Επιλέξτε μια μικρότερη απάντηση."
+
+#: includes/class-aiesk-privacy.php:371
+msgid "This setting is saved with each new share. Changing it does not alter existing shares. Older shares without a saved retention policy remain available to their owner until manually deleted."
+msgstr "Η ρύθμιση αποθηκεύεται με κάθε νέα κοινοποίηση. Η αλλαγή της δεν επηρεάζει τις υπάρχουσες κοινοποιήσεις. Παλιότερες κοινοποιήσεις χωρίς αποθηκευμένη πολιτική διατήρησης παραμένουν διαθέσιμες στον δημιουργό τους μέχρι να διαγραφούν χειροκίνητα."
+
+#: includes/class-aiesk-helpers.php:51
+msgid "This sharing option is disabled."
+msgstr "Αυτή η επιλογή κοινοποίησης είναι απενεργοποιημένη."
+
+#: includes/class-aiesk-i18n.php:230
+msgid "This will immediately disable this link and its QR code."
+msgstr "Ο σύνδεσμος και ο κωδικός QR του θα απενεργοποιηθούν αμέσως."
+
+#: includes/class-aiesk-i18n.php:231 includes/class-aiesk-privacy.php:303
+msgid "Title"
+msgstr "Τίτλος"
+
+msgid "Toggle which sharing methods are available to registered users."
+msgstr "Επιλέξτε ποιες μέθοδοι κοινοποίησης είναι διαθέσιμες στους εγγεγραμμένους χρήστες."
+
+#: includes/admin/class-aiesk-admin-sharing.php:45
+msgid "Toggle which sharing methods are available to registered users. Set up cloud providers in the Cloud storage tab before enabling them."
+msgstr "Επιλέξτε ποιες μέθοδοι κοινοποίησης είναι διαθέσιμες στους εγγεγραμμένους χρήστες. Ρυθμίστε τις υπηρεσίες cloud στην καρτέλα Αποθήκευση στο cloud πριν τις ενεργοποιήσετε."
+
+#: includes/class-aiesk-i18n.php:232
+msgid "Try again"
+msgstr "Δοκιμή ξανά"
+
+#: includes/class-aiesk-i18n.php:233
+msgid "Try another title or status."
+msgstr "Δοκιμάστε άλλον τίτλο ή διαφορετική κατάσταση συνδέσμου."
+
+#: includes/admin/class-aiesk-admin-health.php:27
+msgid "Unavailable"
+msgstr "Μη διαθέσιμο"
+
+#: includes/admin/class-aiesk-admin-ttl.php:89
+msgid "Unit"
+msgstr "Μονάδα"
+
+#: includes/providers/class-aiesk-cloud-auth.php:437
+msgid "Unknown cloud destination."
+msgstr "Άγνωστος προορισμός cloud."
+
+#: includes/admin/class-aiesk-admin-cloud.php:57
+msgid "Unknown cloud service."
+msgstr "Άγνωστη υπηρεσία cloud."
+
+#: includes/class-aiesk-i18n.php:234
+msgid "Updated just now"
+msgstr "Μόλις ενημερώθηκε"
+
+#: includes/admin/class-aiesk-admin-cloud.php:24
+msgid "Upgrading from 2.4.0-rc.1? Replace each registered callback with the query-free URL shown below, then reconnect existing accounts. Do not append action or provider parameters."
+msgstr "Αναβαθμίζετε από την έκδοση 2.4.0-rc.1; Αντικαταστήστε κάθε καταχωρισμένη διεύθυνση επιστροφής με τη διεύθυνση URL χωρίς παραμέτρους που εμφανίζεται παρακάτω και έπειτα επανασυνδέστε τους υπάρχοντες λογαριασμούς. Μην προσθέσετε παραμέτρους action ή provider."
+
+#: includes/class-aiesk-privacy.php:372
+msgid "Use Tools → Export Personal Data or Erase Personal Data for a teacher account’s shared reports. Run erasure before deleting or reassigning the account. Reports are matched to the creator’s account email, not to names or emails written inside the report."
+msgstr "Για τις κοινοποιημένες αναφορές ενός λογαριασμού εκπαιδευτικού, χρησιμοποιήστε Εργαλεία → Εξαγωγή προσωπικών δεδομένων ή Διαγραφή προσωπικών δεδομένων. Εκτελέστε τη διαγραφή πριν διαγράψετε ή μεταβιβάσετε τον λογαριασμό. Οι αναφορές αντιστοιχίζονται στο email του λογαριασμού δημιουργού, όχι σε ονόματα ή email που περιέχονται μέσα στην αναφορά."
+
+#: includes/class-aiesk-i18n.php:235
+msgid "Use short URL"
+msgstr "Χρήση σύντομου συνδέσμου"
+
+#: includes/admin/class-aiesk-admin-cloud.php:55
+msgid "Use the settings form to save changes."
+msgstr "Χρησιμοποιήστε τη φόρμα ρυθμίσεων για να αποθηκεύσετε τις αλλαγές."
+
+#: includes/class-aiesk-i18n.php:236 includes/frontend/class-aiesk-frontend-render.php:84
+msgid "Viber"
+msgstr "Viber"
+
+#: includes/class-aiesk-i18n.php:237
+msgid "Web page (.html)"
+msgstr "Ιστοσελίδα (.html)"
+
+#: includes/class-aiesk-i18n.php:238
+msgid "Weeks"
+msgstr "Εβδομάδες"
+
+#: includes/class-aiesk-i18n.php:239 includes/frontend/class-aiesk-frontend-render.php:83
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: includes/admin/class-aiesk-admin-cloud.php:111
+msgid "When a teacher connects a cloud account and chooses Save, AI Share Kit sends the selected report, its title and chosen file format to that provider. Account tokens and application secrets are stored encrypted on this site. Connections can be disconnected and are removed through account erasure. Cloud files and messages are independent copies controlled by the selected service and recipient; the site’s link expiry and deletion rules do not remove them. Opening WhatsApp or Viber shares the chosen title/link with that service so the teacher can select a recipient and send."
+msgstr "Όταν ένας εκπαιδευτικός συνδέει λογαριασμό cloud και επιλέγει Αποθήκευση, το AI Share Kit στέλνει στην αντίστοιχη υπηρεσία την επιλεγμένη αναφορά, τον τίτλο της και την επιλεγμένη μορφή αρχείου. Τα διακριτικά πρόσβασης λογαριασμών και τα μυστικά κλειδιά εφαρμογών αποθηκεύονται κρυπτογραφημένα σε αυτόν τον ιστότοπο. Οι συνδέσεις μπορούν να καταργηθούν και αφαιρούνται κατά τη διαγραφή των δεδομένων του λογαριασμού. Τα αρχεία cloud και τα μηνύματα είναι ανεξάρτητα αντίγραφα που ελέγχονται από την επιλεγμένη υπηρεσία και τον παραλήπτη· οι κανόνες λήξης και διαγραφής συνδέσμων του ιστοτόπου δεν τα αφαιρούν. Με το άνοιγμα του WhatsApp ή του Viber κοινοποιείται στην αντίστοιχη υπηρεσία ο επιλεγμένος τίτλος και σύνδεσμος, ώστε ο εκπαιδευτικός να επιλέξει παραλήπτη και να στείλει το μήνυμα."
+
+#: includes/class-aiesk-uninstall.php:12
+msgid "When deleting the plugin"
+msgstr "Κατά τη διαγραφή του προσθέτου"
+
+#: includes/class-aiesk-privacy.php:464
+msgid "When you share a report, AI Share Kit stores its title, a copy of its content, your account ID, creation and expiry dates, an access token, and any revocation or scheduled deletion date. Anyone with an active share URL or QR code can view that copy."
+msgstr "Όταν κοινοποιείτε μια αναφορά, το AI Share Kit αποθηκεύει τον τίτλο της, ένα αντίγραφο του περιεχομένου της, το αναγνωριστικό του λογαριασμού σας, τις ημερομηνίες δημιουργίας και λήξης, ένα διακριτικό πρόσβασης και τυχόν ημερομηνία ανάκλησης ή προγραμματισμένης διαγραφής. Όποιος έχει ενεργό σύνδεσμο κοινοποίησης ή κωδικό QR μπορεί να δει αυτό το αντίγραφο."
+
+#: includes/frontend/class-aiesk-dashboard.php:165
+msgid "Whose links to show"
+msgstr "Ποιων χρηστών οι σύνδεσμοι να εμφανίζονται"
+
+msgid "Word document"
+msgstr "Έγγραφο Word"
+
+#: includes/class-aiesk-i18n.php:240
+msgid "Word document (.docx)"
+msgstr "Έγγραφο Word (.docx)"
+
+#: includes/admin/class-aiesk-admin-health.php:14
+msgid "WordPress automatic cron is disabled. Make sure your server runs WordPress cron regularly so expired files, retention and index updates are processed."
+msgstr "Το αυτόματο cron του WordPress είναι απενεργοποιημένο. Βεβαιωθείτε ότι ο διακομιστής σας εκτελεί τακτικά το cron του WordPress, ώστε να διαγράφονται τα ληγμένα αρχεία, να εφαρμόζονται οι κανόνες διατήρησης και να ενημερώνεται το ευρετήριο."
+
+#: includes/admin/class-aiesk-admin-cloud.php:54
+msgid "You are not allowed to change cloud settings."
+msgstr "Δεν έχετε δικαίωμα αλλαγής των ρυθμίσεων cloud."
+
+#: includes/class-aiesk-privacy.php:416
+msgid "You are not allowed to manage legacy QR images."
+msgstr "Δεν έχετε δικαίωμα διαχείρισης παλιών εικόνων QR."
+
+#: includes/class-aiesk-admin-menu.php:31 includes/frontend/class-aiesk-dashboard.php:117 includes/frontend/class-aiesk-dashboard.php:124
+msgid "You are not allowed to view this page."
+msgstr "Δεν έχετε δικαίωμα προβολής αυτής της σελίδας."
+
+#: includes/class-aiesk-i18n.php:241
+msgid "You can close this dialog and keep working. Closing does not cancel the upload."
+msgstr "Μπορείτε να κλείσετε αυτό το παράθυρο και να συνεχίσετε την εργασία σας. Το κλείσιμο δεν ακυρώνει τη μεταφόρτωση."
+
+#: includes/providers/class-aiesk-cloud-auth.php:439
+msgid "You do not have permission to change cloud settings."
+msgstr "Δεν έχετε δικαίωμα αλλαγής των ρυθμίσεων cloud."
+
+#: includes/integrations/class-aiesk-easy-forms.php:100
+msgid "You do not have permission to share reports."
+msgstr "Δεν έχετε άδεια κοινοποίησης αναφορών."
+
+#: includes/class-aiesk-limits.php:74
+msgid "You have reached the sharing limit. Please wait a few minutes before trying again."
+msgstr "Φτάσατε το όριο κοινοποιήσεων. Περιμένετε λίγα λεπτά πριν δοκιμάσετε ξανά."
+
+#: includes/class-aiesk-i18n.php:242
+msgid "Your browser blocked the connection window. Allow pop-ups for this website, then select Connect again."
+msgstr "Το πρόγραμμα περιήγησης απέκλεισε το παράθυρο σύνδεσης. Επιτρέψτε τα αναδυόμενα παράθυρα για αυτόν τον ιστότοπο και επιλέξτε ξανά Σύνδεση."
+
+#: includes/class-aiesk-i18n.php:243
+msgid "Your browser cannot open the sharing dialog. Update your browser and try again."
+msgstr "Το πρόγραμμα περιήγησής σας δεν μπορεί να ανοίξει το παράθυρο κοινοποίησης. Ενημερώστε το και δοκιμάστε ξανά."
+
+#: includes/providers/class-aiesk-cloud-files.php:235
+msgid "Your cloud connection has expired. Reconnect your account and try again."
+msgstr "Η σύνδεσή σας με την υπηρεσία cloud έχει λήξει. Συνδέστε ξανά τον λογαριασμό σας και δοκιμάστε ξανά."
+
+#: includes/class-aiesk-i18n.php:244
+msgid "Your download is ready"
+msgstr "Το αρχείο σας είναι έτοιμο"
+
+#: includes/class-aiesk-i18n.php:245
+msgid "Your name and, if applicable, your school are included in this email."
+msgstr "Το email περιλαμβάνει το όνομά σας και, όπου ισχύει, το όνομα του σχολείου σας."
+
+#: includes/class-aiesk-limits.php:138
+msgid "Your saved reports have reached the account storage limit. Delete shared reports you no longer need, then try again."
+msgstr "Οι αποθηκευμένες αναφορές σας έφτασαν το όριο χώρου του λογαριασμού. Διαγράψτε κοινοποιημένες αναφορές που δεν χρειάζεστε πλέον και δοκιμάστε ξανά."
+
+#: includes/class-aiesk-i18n.php:246
+msgid "Your selected response has been saved as a separate file."
+msgstr "Η επιλεγμένη απάντηση αποθηκεύτηκε ως ξεχωριστό αρχείο."
+
+#: includes/class-aiesk-i18n.php:247
+msgid "Your selected response is saved as a snapshot."
+msgstr "Αποθηκεύτηκε ένα αντίγραφο της επιλεγμένης απάντησης."
+
+#: includes/providers/class-aiesk-cloud-files.php:21
+msgid "Your session has expired. Reload the page and sign in again."
+msgstr "Η σύνδεσή σας έληξε. Ανανεώστε τη σελίδα και συνδεθείτε ξανά."
+
+#: includes/class-aiesk-i18n.php:248
+msgid "Your session has expired. Reload this page or sign in again before sharing."
+msgstr "Η σύνδεσή σας έληξε. Ανανεώστε τη σελίδα ή συνδεθείτε ξανά πριν κοινοποιήσετε την απάντηση."
+
+#: includes/class-aiesk-i18n.php:249
+msgid "Your shared reports will appear here"
+msgstr "Οι κοινοποιημένες αναφορές σας θα εμφανίζονται εδώ"
+
+#: includes/providers/class-aiesk-cloud-auth.php:441
+msgid "Your sign-in session has expired. Reload the page and sign in again."
+msgstr "Η σύνδεσή σας στον ιστότοπο έληξε. Ανανεώστε τη σελίδα και συνδεθείτε ξανά."
+
+#: includes/class-aiesk-i18n.php:250
+msgid "Your sign-in session has expired. Reload this page and sign in again."
+msgstr "Η συνεδρία σύνδεσής σας έχει λήξει. Ανανεώστε αυτή τη σελίδα και συνδεθείτε ξανά."
+
+#: includes/class-aiesk-i18n.php:251
+msgid "Your site administrator needs to set up this service before you can connect."
+msgstr "Ο διαχειριστής του ιστοτόπου πρέπει να ρυθμίσει αυτή την υπηρεσία πριν μπορέσετε να συνδεθείτε."
+
+#: includes/class-aiesk-privacy.php:378
+msgid "days after expiry or revocation"
+msgstr "ημέρες μετά τη λήξη ή την ανάκληση"
+
+#: includes/class-aiesk-i18n.php:252
+msgid "name@example.com"
+msgstr "name@example.com"
+
+#: includes/class-aiesk-frontend.php:103
+msgid "share"
+msgstr "κοινοποίηση"
+
+#: includes/class-aiesk-i18n.php:253
+msgid "{action}: {title}"
+msgstr "{action}: {title}"
+
+#: includes/class-aiesk-i18n.php:254
+msgid "{count} day"
+msgstr "{count} ημέρα"
+
+#: includes/class-aiesk-i18n.php:255
+msgid "{count} days"
+msgstr "{count} ημέρες"
+
+#: includes/class-aiesk-i18n.php:256
+msgid "{count} hour"
+msgstr "{count} ώρα"
+
+#: includes/class-aiesk-i18n.php:257
+msgid "{count} hours"
+msgstr "{count} ώρες"
+
+#: includes/class-aiesk-i18n.php:258
+msgid "{first}–{last} of {total} links"
+msgstr "{first}–{last} από {total} συνδέσμους"
+
+#: includes/class-aiesk-i18n.php:259
+msgid "{provider} is not configured on this website. Ask the site administrator to enable it."
+msgstr "Η υπηρεσία {provider} δεν έχει ρυθμιστεί σε αυτόν τον ιστότοπο. Ζητήστε από τον διαχειριστή να την ενεργοποιήσει."
+

@@ -17,19 +17,23 @@ final class AIESK_Admin_Styles {
 
         // Register options
         register_setting('aiesk_styles', 'aiesk_style_theme', [
-            'type' => 'string', 'default' => 'light', 'sanitize_callback' => 'sanitize_text_field'
+            'type' => 'string', 'default' => 'light', 'sanitize_callback' => function ($value) {
+                return in_array($value, ['light', 'dark'], true) ? $value : 'light';
+            }
         ]);
         register_setting('aiesk_styles', 'aiesk_style_layout', [
-            'type' => 'string', 'default' => 'dropdown', 'sanitize_callback' => 'sanitize_text_field'
+            'type' => 'string', 'default' => 'dropdown', 'sanitize_callback' => function ($value) {
+                return in_array($value, ['dropdown', 'inline'], true) ? $value : 'dropdown';
+            }
         ]);
         register_setting('aiesk_styles', 'aiesk_color_primary', [
-            'type' => 'string', 'default' => '#2563eb', 'sanitize_callback' => 'sanitize_hex_color'
+            'type' => 'string', 'default' => '#2563eb', 'sanitize_callback' => function ($value) { return sanitize_hex_color($value) ?: '#2563eb'; }
         ]);
         register_setting('aiesk_styles', 'aiesk_color_accent', [
-            'type' => 'string', 'default' => '#9333ea', 'sanitize_callback' => 'sanitize_hex_color'
+            'type' => 'string', 'default' => '#9333ea', 'sanitize_callback' => function ($value) { return sanitize_hex_color($value) ?: '#9333ea'; }
         ]);
         register_setting('aiesk_styles', 'aiesk_color_button_text', [
-            'type' => 'string', 'default' => '#ffffff', 'sanitize_callback' => 'sanitize_hex_color'
+            'type' => 'string', 'default' => '#ffffff', 'sanitize_callback' => function ($value) { return sanitize_hex_color($value) ?: '#ffffff'; }
         ]);
 
         add_settings_section(
@@ -94,20 +98,40 @@ final class AIESK_Admin_Styles {
      * Output inline CSS variables to apply admin-defined colors and theme
      */
     public function output_custom_css(): void {
-        $primary = get_option('aiesk_color_primary', '#2563eb');
-        $accent  = get_option('aiesk_color_accent', '#9333ea');
-        $btntext = get_option('aiesk_color_button_text', '#ffffff');
+        $primary = sanitize_hex_color(get_option('aiesk_color_primary', '#2563eb')) ?: '#2563eb';
+        $accent  = sanitize_hex_color(get_option('aiesk_color_accent', '#9333ea')) ?: '#9333ea';
+        $btntext = sanitize_hex_color(get_option('aiesk_color_button_text', '#ffffff')) ?: '#ffffff';
         $theme   = get_option('aiesk_style_theme', 'light');
+        if (self::contrast($primary, $btntext) < 4.5) {
+            $btntext = self::contrast($primary, '#ffffff') >= self::contrast($primary, '#111827') ? '#ffffff' : '#111827';
+        }
+        $surface = $theme === 'dark' ? '#0f172a' : '#ffffff';
+        $link = self::contrast($primary, $surface) >= 4.5 ? $primary : ($theme === 'dark' ? '#a9c3ff' : '#1d4ed8');
 
         echo '<style id="aiesk-styles">';
         echo '.aiesk-scope {';
         echo '--aiesk-primary:' . esc_attr($primary) . ';';
         echo '--aiesk-accent:' . esc_attr($accent) . ';';
         echo '--aiesk-btn-text:' . esc_attr($btntext) . ';';
+        echo '--aiesk-link:' . esc_attr($link) . ';';
         echo ($theme === 'dark'
             ? '--aiesk-bg:#0f172a;--aiesk-fg:#e2e8f0;'
             : '--aiesk-bg:#ffffff;--aiesk-fg:#0f172a;');
         echo '}';
         echo '</style>';
+    }
+
+    private static function contrast(string $first, string $second): float {
+        $luminance = static function (string $hex): float {
+            $hex = ltrim($hex, '#');
+            if (strlen($hex) === 3) { $hex = $hex[0] . $hex[0] . $hex[1] . $hex[1] . $hex[2] . $hex[2]; }
+            $rgb = array_map(static function ($part): float {
+                $v = hexdec($part) / 255;
+                return $v <= 0.04045 ? $v / 12.92 : (($v + 0.055) / 1.055) ** 2.4;
+            }, str_split($hex, 2));
+            return $rgb[0] * 0.2126 + $rgb[1] * 0.7152 + $rgb[2] * 0.0722;
+        };
+        $a = $luminance($first); $b = $luminance($second);
+        return (max($a, $b) + 0.05) / (min($a, $b) + 0.05);
     }
 }

@@ -1,0 +1,16 @@
+{
+  "package": "qrcode-generator",
+  "version": "2.0.4",
+  "license": "MIT",
+  "author": "Kazuhiko Arase",
+  "repository": "https://github.com/kazuhikoarase/qrcode-generator",
+  "tarball": "https://registry.npmjs.org/qrcode-generator/-/qrcode-generator-2.0.4.tgz",
+  "source_file": "dist/qrcode.js",
+  "vendored_file": "qrcode-generator-2.0.4.js",
+  "modified": false,
+  "sha256": "79ec86f82856005b1c887905cfccfcfbec3821ca61c7fd5a952faa5f778f791c",
+  "license_source": "https://raw.githubusercontent.com/kazuhikoarase/qrcode-generator/83b7e8fe3fddd3b0368dbafd6ce56995bd25e3c8/LICENSE",
+  "purpose": "Generate private share-link QR codes locally; no external QR service requests.",
+  "upstream_commit": "83b7e8fe3fddd3b0368dbafd6ce56995bd25e3c8",
+  "npm_integrity": "sha512-mZSiP6RnbHl4xL2Ap5HfkjLnmxfKcPWpWe/c+5XxCuetEenqmNFf1FH/ftXPCtFG5/TDobjsjz6sSNL0Sr8Z9g=="
+}
