@@ -9,6 +9,10 @@
   --aiesk-line: #35425b; --aiesk-soft: #1b2940; --aiesk-muted: #a5b3c8;
   --aiesk-success: #72dec3; --aiesk-danger: #ff96a5; color-scheme: dark;
 }
+/* AI EdWiBo dashboard design-system bridge. Share Kit keeps standalone
+ * fallbacks, while embedded controls inherit the dashboard theme. */
+.edb-app.edb-theme-light .aiesk-scope,.edb-app:not(.edb-theme-dark) .aiesk-scope{--aiesk-bg:var(--edb-surface,#fff);--aiesk-fg:var(--edb-text,#17243a);--aiesk-line:var(--edb-border,#cbd5e1);--aiesk-soft:var(--edb-surface-soft,#f5f7fb);--aiesk-muted:var(--edb-muted,#526176);--aiesk-primary:var(--edb-primary,#2563eb);--aiesk-link:var(--edb-primary,#1d4ed8);color-scheme:light;font-family:var(--edb-font-family,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)}
+.edb-app.edb-theme-dark .aiesk-scope{--aiesk-bg:var(--edb-surface,#152235);--aiesk-fg:var(--edb-text,#e7eef7);--aiesk-line:var(--edb-border,#2d4058);--aiesk-soft:var(--edb-surface-soft,#101c2c);--aiesk-muted:var(--edb-muted,#a9bad0);--aiesk-primary:var(--edb-primary,#8fd2ff);--aiesk-link:var(--edb-primary,#8fd2ff);--aiesk-success:var(--edb-success,#8ee0bd);--aiesk-danger:var(--edb-danger,#ff96a5);color-scheme:dark;font-family:var(--edb-font-family,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)}
 .aiesk-scope *, .aiesk-scope *::before, .aiesk-scope *::after { box-sizing: border-box; }
 .aiesk-scope [hidden], .aiesk-scope[hidden] { display: none !important; }
 .aiesk-scope button, .aiesk-scope input, .aiesk-scope select, .aiesk-scope a { font: inherit; letter-spacing: normal; text-transform: none; }
